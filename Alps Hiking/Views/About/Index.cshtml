@@ -1,0 +1,162 @@
+﻿@model HomeViewModel
+@inject Alps_Hiking.Services.LayoutService layoutservice
+
+@{
+    ViewData["Title"] = "About Page";
+}
+
+
+@section Link {
+    <link rel="stylesheet" href="~/assets/scss/about.css">
+}
+
+
+<main>
+
+        <section id="slider">
+            <div class="content">
+                <div class="image">
+                    <img src="./assets/images/slider/@(Model.Slider.Find(x=>x.Title=="About Us").ImagePath)" alt="">
+                </div>
+                <h1>About Us</h1>
+            </div>
+        </section>
+
+
+    <section id="concept">
+        <div class="col-lg-6 col-md-12">
+            <div class="textside">
+                <span>CONCEPT</span>
+                <h1>AN EVER YOUNG COMMUNITY</h1>
+                <div class="desc">
+                    <p>
+                        @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "ConceptDesc")?.Value)
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 imageside">
+        </div>
+    </section>
+
+
+    <section id="history">
+        <div class="col-lg-6 d-lg-block d-md-none">
+            <div class="imageside">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="textside ">
+                <h2 class="title">History</h2>
+                <h3 class="subtitle">1991</h3>
+                <p class="paragraph">
+                    The Alps Hiking chain of fashion stores was born, a result of a market segmentation strategy initiated by the Inditex Group. This was the moment
+                    when people were demanding a basic fashion style influenced by international trends, fashion that could also quickly adapt to their needs, with three
+                    fundamental premises: fashion, price and quality. The underlying idea of Alps Hiking was to bring fashion to the people.
+                </p>
+                <h3 class="subtitle">1992</h3>
+                <p class="paragraph">
+                    The ability to understand the concept of global fashion, along with an aggressive price policy, facilitated its international expansion from 1992
+                    onwards, with the opening of their first stores in Portugal.
+                </p>
+                <h3 class="subtitle">1995</h3>
+                <p class="paragraph">Alps Hiking arrived to Greece and Malta, and quickly gained strong position on both markets.</p>
+                <h3 class="subtitle">1997</h3>
+                <p class="paragraph">First store openings in Israel.</p>
+                <h3 class="subtitle">1998</h3>
+                <p class="paragraph">
+                    The first collection for women sees the light of the day. Xdye is also added to the Alps Hiking line, offering sportier and more technological
+                    garments, from the very beginning linked to the icons of 21st century youth: music, technology, artistic movements, social issues, etc. That same year,
+                    the first website is created and the first stores open in Cyprus.
+                </p>
+                <h3 class="subtitle">1999</h3>
+                <p class="paragraph">
+                    New product lines boosted the creation of stores where music, technology, videogames and video images
+                    are mixed with clothes to offer customers an authentic life style.
+                </p>
+                <h3 class="subtitle">2000</h3>
+                <p class="paragraph">The first Alps Hiking store was opened in Kuwait.</p>
+                <h3 class="subtitle">2001</h3>
+                <p class="paragraph">
+                    The new clothes line, Sickonineteen, is added to stores, also directed at a young market. Alps Hiking enters the
+                    United Arab Emirate, Irish and Venezuelan  markets that same year.
+                </p>
+                <h3 class="subtitle">2002</h3>
+                <p class="paragraph">First stores open in Mexico, Jordan, Bahrain, Qatar and Lebanon.</p>
+                <h3 class="subtitle">2003</h3>
+                <p class="paragraph">First stores open in Andorra and Slovakuia.</p>
+                <h3 class="subtitle">2004</h3>
+                <p class="paragraph">Alps Hiking arrives in Romania and Russia.</p>
+                <h3 class="subtitle">2005</h3>
+                <p class="paragraph">The first stores open in France, Italy, Turkey and the Czech Republic.</p>
+                <h3 class="subtitle">2006</h3>
+                <p class="paragraph">El Salvador, Lithuania, Poland and Singapore become new markets.</p>
+                <h3 class="subtitle">2007</h3>
+                <p class="paragraph">Alps Hiking arrives to the Slovenian, Belgian, Saudi Arabian, Guatemalan, Latvian, Malaysian, Serbian and Hungarian markets.</p>
+                <h3 class="subtitle">2008</h3>
+                <p class="paragraph">
+                    They enter the Indonesian, Montenegro, UK and Egyptian markets. Alps Hiking begins publishing their catalogue exclusively on their website to
+                    prevent paper consumption, thus reducing their environmental impact. The project is complemented by helping the Sierra Gorda Biosphere
+                    Reserve reforestation in Mexico, simultaneously getting engaged in the issues concerning climate change and the poverty existing in local communities.
+                </p>
+                <h3 class="subtitle">2009</h3>
+                <p class="paragraph">Croatia, Ukraine, Estonia and China become new markets.</p>
+                <h3 class="subtitle">2010</h3>
+                <p class="paragraph">Stores open in Bulgaria, Macao SAR, Hong Kong SAR and Kazakhstan.</p>
+                <h3 class="subtitle">2011</h3>
+                <p class="paragraph">Alps Hiking begins to operate in Holland, Morocco and Korea. The online store goes live for the first time on 6 September. Alps Hiking celebrates its 20th anniversary (1991-2011) with a limited edition collection for children, Alps Hiking for Kids. The year also sees the launch of the Premium line for men, Alps Hiking Heritage, targeting its adult customers that have grown up with the brand.</p>
+                <h3 class="subtitle">2012</h3>
+                <p class="paragraph">First openings of stores in Austria, Armenia, Azerbaijan, Bosnia-Herzegovina, Colombia, Ecuador, Georgia, Honduras, Macedonia, Dominican Republic and Thailand. In Switzerland, Sweden, Monaco, Luxemburg and Denmark, Alps Hiking operates exclusively online.</p>
+                <h3 class="subtitle">2013</h3>
+                <p class="paragraph">First openings of stores in Germany, Costa Rica, Panama and Taiwan,China.  The online store in Romania is launched. The first organic cotton denim collection is launched.</p>
+                <h3 class="subtitle">2015</h3>
+                <p class="paragraph">Launch of the first global campaign, Be More Barrio. Opening of the first physical stores in Switzerland and Sweden.</p>
+                <h3 class="subtitle">2016</h3>
+                <p class="paragraph">Alps Hiking's online store expands its presence in 12 new European markets and is now present in a total of 33 markets worldwide. First physical stores open in Nicaragua and Luxembourg.</p>
+                <h3 class="subtitle">2017</h3>
+                <p class="paragraph">First openings of brick-and-mortar stores in Belarus and Vietnam. The brand becomes the main sponsor of Alps Hiking Pantin Classic Galicia Pro, a major surfing competition, and develops an environmental project involving waste collection and recycling.</p>
+                <h3 class="subtitle">2018</h3>
+                <p class="paragraph">Alps Hiking launches its first Join Life capsule collection - this is the label used by the Inditex Group to identify garments created using the best sustainable raw materials and processes.</p>
+                <h3 class="subtitle">2019</h3>
+                <p class="paragraph">Alps Hiking has partnered with Primavera Sound, a world-renowned music festival.</p>
+            </div>
+        </div>
+
+        <div class="d-lg-none d-md-12">
+            <div class="imageside">
+            </div>
+    </section>
+
+
+
+    <section id="numbers">
+        <div class="col-lg-6">
+            <div class="textside">
+                <div class="text">
+                    <span>Numbers</span>
+                    <p>@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "Numbers")?.Value)</p>
+                </div>
+            </div>
+        </div>
+        <div class="imageside col-lg-6">
+        </div>
+    </section>
+
+
+
+    <section id="workwithus">
+        <div class="imageside col-lg-6 d-md-none d-lg-block">
+        </div>
+        <div class="col-lg-6 col-md-12">
+            <div class="textside">
+                <div class="text">
+                    <span>Work With Us</span>
+                    <p>
+                        @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "WorkWithUs")?.Value)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

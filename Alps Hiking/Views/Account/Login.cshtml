@@ -1,0 +1,44 @@
+﻿@model LoginVM
+@section Link {
+    <link rel="stylesheet" href="~/assets/css/login.css">
+}
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="allform">
+                <div class="col-lg-4 col-md-6">
+                    <h3>Have  an account?</h3>
+                    <form asp-action="Login" method="post">
+                        <div class="mb-3">
+                            <input asp-for="Username" type="text" placeholder="Username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="Username"></span>
+                        </div>
+                        <div class="mb-3">
+                            <input asp-for="Password" type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+                            <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="Password"></span>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input asp-for="RememberMe" type="checkbox" class="form-check-input checkbox" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn ">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<style>
+    body {
+        height: 110vh !important;
+    }
+
+    footer {
+        display: none;
+    }
+</style>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+}

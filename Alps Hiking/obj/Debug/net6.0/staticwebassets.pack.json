@@ -1,0 +1,1981 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Alps Hiking.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Alps Hiking.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\Bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\.gitattributes",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\.gitattributes"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\.gitignore",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\.travis.yml",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\.travis.yml"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\CONTRIBUTING.md",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\CONTRIBUTING.md"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\Gruntfile.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\Gruntfile.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\ISSUE_TEMPLATE.md",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\ISSUE_TEMPLATE.md"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\LICENSE",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\README.md",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\ROADMAP.md",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\ROADMAP.md"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\_config.json",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\_config.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\bower.json",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\bower.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\LICENSE",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\README.md",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\dist\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\dist\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\css\\docs.theme.min.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\css\\docs.theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\bird_blue_32.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\bird_blue_32.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\download.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\download.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-drag.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-drag.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-modern.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-modern.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-module.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-module.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-options.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-options.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-responsive.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-responsive.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-zombie.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\feature-zombie.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\owl-logo.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\owl-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\twitter_25.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\img\\twitter_25.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\js\\foundation.min.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\js\\foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\README.md",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\vendors\\foundation.min.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\vendors\\foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\vendors\\highlight.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\vendors\\highlight.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\vendors\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\vendors\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\vendors\\jquery.min.map",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\vendors\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\vendors\\jquery.mousewheel.min.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\assets\\vendors\\jquery.mousewheel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\animate.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\animate.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\autoheight.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\autoheight.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\autoplay.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\autoplay.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\autowidth.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\autowidth.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\basic.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\basic.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\center.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\center.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\demos.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\demos.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\events.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\events.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\lazyLoad.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\lazyLoad.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\merge.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\merge.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\mousewheel.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\mousewheel.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\responsive.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\responsive.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\rtl.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\rtl.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\stagepadding.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\stagepadding.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\test.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\test.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\urlhashnav.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\urlhashnav.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\video.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\demos\\video.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\api-classes.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\api-classes.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\api-events.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\api-events.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\api-options.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\api-options.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\dev-buildin-plugins.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\dev-buildin-plugins.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\dev-external.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\dev-external.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\dev-plugin-api.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\dev-plugin-api.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\dev-styles.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\dev-styles.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\started-faq.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\started-faq.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\started-installation.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\started-installation.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\started-welcome.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\started-welcome.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\support-changelog.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\support-changelog.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\support-contact.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\support-contact.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\support-contributing.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\docs\\support-contributing.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs\\index.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\css\\highlight.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\css\\highlight.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\css\\highlight.css.map",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\css\\highlight.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\bird_blue_32.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\bird_blue_32.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\download.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\download.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-drag.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-drag.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-modern.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-modern.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-module.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-module.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-options.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-options.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-responsive.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-responsive.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-zombie.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\feature-zombie.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\owl-logo.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\owl-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\twitter_25.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\img\\twitter_25.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\js\\foundation.min.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\js\\foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\_settings.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\_settings.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\custom.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\custom.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\demos.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\demos.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\docs.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\docs.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\docs.theme.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\docs.theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\highlight.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\highlight.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\highlight.css.map",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\highlight.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\highlight.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\scss\\highlight.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\vendors\\foundation.min.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\vendors\\foundation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\vendors\\highlight.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\vendors\\highlight.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\vendors\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\vendors\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\vendors\\jquery.min.map",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\vendors\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\vendors\\jquery.mousewheel.min.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\assets\\vendors\\jquery.mousewheel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\data\\classes.json",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\data\\classes.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\data\\events.json",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\data\\events.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\data\\features.json",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\data\\features.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\data\\options.json",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\data\\options.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\helpers\\modulo.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\helpers\\modulo.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\helpers\\test.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\helpers\\test.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\layouts\\demos.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\layouts\\demos.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\layouts\\docs.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\layouts\\docs.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\layouts\\home.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\layouts\\home.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\animate.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\animate.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\autoheight.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\autoheight.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\autoplay.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\autoplay.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\autowidth.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\autowidth.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\basic.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\basic.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\center.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\center.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\demos.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\demos.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\events.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\events.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\lazyLoad.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\lazyLoad.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\merge.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\merge.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\mousewheel.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\mousewheel.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\responsive.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\responsive.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\rtl.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\rtl.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\stagepadding.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\stagepadding.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\test.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\test.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\urlhashnav.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\urlhashnav.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\video.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\demos\\video.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\api-classes.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\api-classes.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\api-events.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\api-events.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\api-options.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\api-options.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\dev-buildin-plugins.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\dev-buildin-plugins.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\dev-external.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\dev-external.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\dev-plugin-api.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\dev-plugin-api.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\dev-styles.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\dev-styles.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\started-faq.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\started-faq.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\started-installation.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\started-installation.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\started-welcome.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\started-welcome.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\support-changelog.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\support-changelog.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\support-contact.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\support-contact.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\support-contributing.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\docs\\support-contributing.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\index.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\pages\\index.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\footer.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\footer.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\head.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\head.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\header.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\header.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\home-carousel.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\home-carousel.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\home-features.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\home-features.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\home-hero.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\home-hero.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\home-teaser-text.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\home-teaser-text.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\javascripts.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\javascripts.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\releated-docs.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\releated-docs.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\sidenav-docs.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\sidenav-docs.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\title.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\title.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\vendors.hbs",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\docs_src\\templates\\partials\\vendors.hbs"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\package-lock.json",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\package-lock.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\package.json",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.carousel.css.map",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.carousel.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.theme.default.css.map",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.theme.default.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.theme.green.css.map",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\css\\owl.theme.green.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\img\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\img\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\img\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\img\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\.jscsrc",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\.jscsrc"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\.jshintrc",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\.jshintrc"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.animate.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.animate.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.autoheight.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.autoheight.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.autoplay.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.autoplay.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.autorefresh.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.autorefresh.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.hash.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.hash.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.lazyload.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.lazyload.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.navigation.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.navigation.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.support.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.support.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.support.modernizr.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.support.modernizr.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.video.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\js\\owl.video.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_animate.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_animate.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_autoheight.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_autoheight.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_lazyload.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_lazyload.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_theme.default.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_theme.default.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_theme.green.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_theme.green.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_theme.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_video.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\_video.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.carousel.css.map",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.carousel.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.carousel.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.default.css.map",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.default.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.default.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.default.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.green.css.map",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.green.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.green.scss",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\src\\scss\\owl.theme.green.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\test\\index.html",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\test\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\test\\unit\\autoplay.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\test\\unit\\autoplay.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\test\\unit\\core.js",
+      "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\test\\unit\\core.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\about.css",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\about.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\about.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\button.css",
+      "PackagePath": "staticwebassets\\assets\\css\\button.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\contact.css",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\contact.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\contact.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\destinations.css",
+      "PackagePath": "staticwebassets\\assets\\css\\destinations.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\destinations.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\destinations.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\detail.css",
+      "PackagePath": "staticwebassets\\assets\\css\\detail.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\detail.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\detail.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\hamburgermenu.css",
+      "PackagePath": "staticwebassets\\assets\\css\\hamburgermenu.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\login.css",
+      "PackagePath": "staticwebassets\\assets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\login.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\login.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\register.css",
+      "PackagePath": "staticwebassets\\assets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\register.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\register.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\team.css",
+      "PackagePath": "staticwebassets\\assets\\css\\team.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\team.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\team.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\fonts\\Dancing_Script\\DancingScript-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Dancing_Script\\DancingScript-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\fonts\\Dancing_Script\\OFL.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Dancing_Script\\OFL.txt"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\fonts\\Dancing_Script\\README.txt",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Dancing_Script\\README.txt"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\fonts\\Dancing_Script\\static\\DancingScript-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Dancing_Script\\static\\DancingScript-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\fonts\\Dancing_Script\\static\\DancingScript-Medium.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Dancing_Script\\static\\DancingScript-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\fonts\\Dancing_Script\\static\\DancingScript-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Dancing_Script\\static\\DancingScript-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\fonts\\Dancing_Script\\static\\DancingScript-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Dancing_Script\\static\\DancingScript-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\Untitled-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\Untitled-2.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\backpack.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\backpack.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\binoculars.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\binoculars.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\clibing.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\clibing.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\coffee.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\coffee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\column-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\column-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\counter-bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\counter-bg.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\download.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\download.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\flag.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\flag.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\hiking-slider.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\hiking-slider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\knife.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\knife.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\map.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\map.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\mountain-bg-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\mountain-bg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\mountain-bg-2-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\mountain-bg-2-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\pexels-eberhard-grossgasteiger-2086622.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\pexels-eberhard-grossgasteiger-2086622.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\pexels-riccardo-300857.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\pexels-riccardo-300857.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\pexels-stein-egil-liland-3573603.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\pexels-stein-egil-liland-3573603.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\section-bg-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\section-bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\sidebar-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\sidebar-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\single-icon-difficulty-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\single-icon-difficulty-2.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\testimonial-bg-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\testimonial-bg-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\SectionImages\\tour-item-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\SectionImages\\tour-item-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\flags\\1024px-Flag_of_the_Republic_of_Amalfi.svg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\flags\\1024px-Flag_of_the_Republic_of_Amalfi.svg.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\flags\\10930893-origpic-2e0094.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\flags\\10930893-origpic-2e0094.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\flags\\FLAG-Ireland.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\flags\\FLAG-Ireland.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\flags\\FLAG-Irelannd.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\flags\\FLAG-Irelannd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\flags\\Flag-Hungary.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\flags\\Flag-Hungary.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\flags\\Flag_of_Slovenia_ml.png",
+      "PackagePath": "staticwebassets\\assets\\images\\flags\\Flag_of_Slovenia_ml.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\flags\\Flag_of_Switzerland.svg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\flags\\Flag_of_Switzerland.svg.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\flags\\it_amalf.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\flags\\it_amalf.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\flags\\me-flag.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\flags\\me-flag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\flags\\vxslrmmq0fcz.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\flags\\vxslrmmq0fcz.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\139-1393055_we-accept-all-major-credit-and-debit-cards-visa-mastercard-american-express.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\139-1393055_we-accept-all-major-credit-and-debit-cards-visa-mastercard-american-express.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\LeanData_full-logo_white-2-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\LeanData_full-logo_white-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\MasterCard_Logo.svg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\MasterCard_Logo.svg.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\Sir-Joseph.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\Sir-Joseph.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\Visa_Inc._logo.svg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\Visa_Inc._logo.svg.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\banner-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\banner-2.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\banner-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\banner-3.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\banner-4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\banner-4.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\banner-5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\banner-5.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\mastercard-44x30.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\mastercard-44x30.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\maxresdefault.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\maxresdefault.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\paypal-784404__480.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\paypal-784404__480.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\partners\\png-transparent-american-express-credit-card-mastercard-visa-payment-credit-card-blue-angle-text-thumbnail.png",
+      "PackagePath": "staticwebassets\\assets\\images\\partners\\png-transparent-american-express-credit-card-mastercard-visa-payment-credit-card-blue-angle-text-thumbnail.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\1508803-full.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\1508803-full.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\500pxRF_100050585.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\500pxRF_100050585.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\asets_20.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\asets_20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\awards.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\awards.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\eberhard-grossgasteiger-628147-unsplash.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\eberhard-grossgasteiger-628147-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\hiking-slider-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\hiking-slider-1.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\hiking-slider-text-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\hiking-slider-text-1.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\hiking-slider-text-2-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\hiking-slider-text-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\logo-hiking-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\logo-hiking-1.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\logo-hiking-mobile-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\logo-hiking-mobile-1.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\norwegia_lofoty_reine_zachod_slonca_1a08dc3a-ca4a-4cdb-af5c-80e884a0305b.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\norwegia_lofoty_reine_zachod_slonca_1a08dc3a-ca4a-4cdb-af5c-80e884a0305b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-andre-furtado-2916820.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-andre-furtado-2916820.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-anne-mccarthy-3900437.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-anne-mccarthy-3900437.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-baskin-creative-studios-1480799.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-baskin-creative-studios-1480799.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-casia-charlie-2451040.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-casia-charlie-2451040.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-eberhard-grossgasteiger-1287145.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-eberhard-grossgasteiger-1287145.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-eberhard-grossgasteiger-443446.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-eberhard-grossgasteiger-443446.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-gianluca-grisenti-4261096.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-gianluca-grisenti-4261096.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-ian-beckley-2440078.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-ian-beckley-2440078.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-jacob-colvin-1761279.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-jacob-colvin-1761279.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-jarod-lovekamp-3250629.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-jarod-lovekamp-3250629.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-joseph-phillips-3753669.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-joseph-phillips-3753669.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-joyston-judah-933054.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-joyston-judah-933054.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-matthias-groeneveld-2686558.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-matthias-groeneveld-2686558.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-michael-block-3225517.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-michael-block-3225517.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-pixabay-414513.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-pixabay-414513.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-quintin-gellar-1899236.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-quintin-gellar-1899236.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-s-migaj-951076.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-s-migaj-951076.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-stein-egil-liland-1933315.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-stein-egil-liland-1933315.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\pexels-valiphotos-589808.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\pexels-valiphotos-589808.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\scenery-lake-blue-sky-forest-reflection-scenic-clouds-6016x3384-6639.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\scenery-lake-blue-sky-forest-reflection-scenic-clouds-6016x3384-6639.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\shutterstock_378831490.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\shutterstock_378831490.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\slider\\stock-photo-landscape-with-atrani-town-at-famous-amalfi-coast-italy-1436187389.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\stock-photo-landscape-with-atrani-town-at-famous-amalfi-coast-italy-1436187389.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\company_01_01.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\company_01_01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\personnel-2-550x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\personnel-2-550x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\personnel-3-400x363.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\personnel-3-400x363.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\personnel-4-550x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\personnel-4-550x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\personnel-5-400x363.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\personnel-5-400x363.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\personnel-6-550x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\personnel-6-550x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-ali-pazani-2681741.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-ali-pazani-2681741.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-george-dolgikh-1310522.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-george-dolgikh-1310522.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-mahdi-chaghari-12975826.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-mahdi-chaghari-12975826.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-photo-167471-500x500.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-photo-167471-500x500.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-photo-176045-500x500.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-photo-176045-500x500.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-photo-48646-1-500x500.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-photo-48646-1-500x500.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-photo-57759-500x500.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-photo-57759-500x500.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-photo-62365-500x500.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-photo-62365-500x500.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-spencer-selover-428328.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-spencer-selover-428328.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-wendy-wei-1656684.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-wendy-wei-1656684.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-yaroslava-borz-10049576.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-yaroslava-borz-10049576.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\teammembers\\pexels-марина-вотинцева-9136201.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\teammembers\\pexels-марина-вотинцева-9136201.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\1f32b7f3-04e6-4a37-836b-817620cb5565.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\1f32b7f3-04e6-4a37-836b-817620cb5565.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\21travel-sweden-promo-1-videoSixteenByNineJumbo1600.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\21travel-sweden-promo-1-videoSixteenByNineJumbo1600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\39267772-prague-wallpapers-700x466.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\39267772-prague-wallpapers-700x466.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\KzaKzkvG-1-700x500.png",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\KzaKzkvG-1-700x500.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\Lake-Bled-GettyImages-596573607.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Lake-Bled-GettyImages-596573607.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\Luggage-Factory-The-Travel-Experts-Destinations-Miami-Flordia-Beach-3-700x466.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Luggage-Factory-The-Travel-Experts-Destinations-Miami-Flordia-Beach-3-700x466.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\Madeira_Portugal.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Madeira_Portugal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\RUSSIA-FEATURE-compressed.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\RUSSIA-FEATURE-compressed.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\Slovenia-2560x1395.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Slovenia-2560x1395.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\Snowy+Mountain+with+Steve+this+one+Mine.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Snowy+Mountain+with+Steve+this+one+Mine.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\Tokyo_Dollarphotoclub_72848283-copy-700x466.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Tokyo_Dollarphotoclub_72848283-copy-700x466.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\_methode_sundaytimes_prod_web_bin_89b102f4-42e8-11ec-b414-b1f6389ab345.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\_methode_sundaytimes_prod_web_bin_89b102f4-42e8-11ec-b414-b1f6389ab345.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\aaker-567870-unsplash-1500x1000.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\aaker-567870-unsplash-1500x1000.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\aaron-benson-200753-unsplash-1280x580.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\aaron-benson-200753-unsplash-1280x580.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\andreas-wagner-724219-unsplash-1500x1000.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\andreas-wagner-724219-unsplash-1500x1000.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\beautiful-photos-of-italy.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\beautiful-photos-of-italy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\caption.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\caption.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\colors-italy-series-manarola-village-cinque-terre-beautiful-liguria-75217180.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\colors-italy-series-manarola-village-cinque-terre-beautiful-liguria-75217180.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\eiffel-tower-3349075_1280.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\eiffel-tower-3349075_1280.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\estonia-tallinn.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\estonia-tallinn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\george-stackpole-114522-unsplash-700x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\george-stackpole-114522-unsplash-700x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\image_processing20181012-4-oaqtqh.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\image_processing20181012-4-oaqtqh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\image_processing20190918-4-1puj64b.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\image_processing20190918-4-1puj64b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\joshua-earle-234740-unsplash-400x285.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\joshua-earle-234740-unsplash-400x285.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\joshua-earle-234740-unsplash-900x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\joshua-earle-234740-unsplash-900x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\ljubljana-Slovenia.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\ljubljana-Slovenia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\marco-meyer-598648-unsplash-400x285.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\marco-meyer-598648-unsplash-400x285.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\milan-italy-cathedral-1024x682.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\milan-italy-cathedral-1024x682.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\oziel-gomez-555955-unsplash-700x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\oziel-gomez-555955-unsplash-700x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pamela-saunders-384317-unsplash-1500x1000.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pamela-saunders-384317-unsplash-1500x1000.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pamela-saunders-384317-unsplash-700x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pamela-saunders-384317-unsplash-700x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pamela-saunders-384317-unsplash-900x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pamela-saunders-384317-unsplash-900x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\paul-gilmore-96153-unsplash-1500x1000.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\paul-gilmore-96153-unsplash-1500x1000.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\paul-gilmore-96153-unsplash-700x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\paul-gilmore-96153-unsplash-700x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-davi-pimentel-2064827.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pexels-davi-pimentel-2064827.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-photo-1-700x466.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pexels-photo-1-700x466.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-photo-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pexels-photo-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-photo-24377.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pexels-photo-24377.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-photo-96420-700x466.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pexels-photo-96420-700x466.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-pixabay-531602.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pexels-pixabay-531602.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\portugal-3029665_1280.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\portugal-3029665_1280.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\red-hat-factory-768348-unsplash-1500x1000.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\red-hat-factory-768348-unsplash-1500x1000.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\resid.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\resid.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\sander-crombach-722287-unsplash-700x500.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\sander-crombach-722287-unsplash-700x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\spain-holiday-destinations-lead-girona-pol-albarra-n-1675292136.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\spain-holiday-destinations-lead-girona-pol-albarra-n-1675292136.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\trieste@news-slovenia-lubiana--1200x1200-cropped.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\trieste@news-slovenia-lubiana--1200x1200-cropped.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\valencia-cidade-das-artes.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\valencia-cidade-das-artes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\venice-WBEUROCITIES16-700x466.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\venice-WBEUROCITIES16-700x466.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\video\\videoplayback.webm",
+      "PackagePath": "staticwebassets\\assets\\images\\video\\videoplayback.webm"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\js\\basket.js",
+      "PackagePath": "staticwebassets\\assets\\js\\basket.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\js\\destination.js",
+      "PackagePath": "staticwebassets\\assets\\js\\destination.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\js\\detail.js",
+      "PackagePath": "staticwebassets\\assets\\js\\detail.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\js\\hamburgermenu.js",
+      "PackagePath": "staticwebassets\\assets\\js\\hamburgermenu.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\js\\index.js",
+      "PackagePath": "staticwebassets\\assets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\js\\login.js",
+      "PackagePath": "staticwebassets\\assets\\js\\login.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\js\\team.js",
+      "PackagePath": "staticwebassets\\assets\\js\\team.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\js\\tours.js",
+      "PackagePath": "staticwebassets\\assets\\js\\tours.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\about.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\about.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\about.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\about.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\about.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\about.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\contact.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\contact.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\contact.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\contact.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\destinations.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\destinations.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\destinations.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\destinations.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\destinations.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\destinations.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\detail.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\detail.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\detail.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\detail.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\detail.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\detail.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\login.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\login.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\login.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\login.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\login.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\register.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\register.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\register.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\register.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\register.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\style.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\style.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\team.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\team.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\team.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\team.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\team.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\team.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\tours.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\tours.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\tours.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\tours.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\scss\\tours.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\tours.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\.gitignore",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\CONTRIBUTING.markdown",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\CONTRIBUTING.markdown"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\ISSUE_TEMPLATE.md",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\ISSUE_TEMPLATE.md"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\LICENSE",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\Makefile",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\README.markdown",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\README.markdown"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\bower.json",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\bower.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\component.json",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\component.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\css\\slick-theme.css",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\css\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\css\\slick-theme.css.map",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\css\\slick-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\css\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\css\\slick.css.map",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\css\\slick.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\index.html",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\package.json",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick.jquery.json",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick.jquery.json"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\config.rb",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\config.rb"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\slick-theme.css",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\slick-theme.css.map",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\slick-theme.less",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick-theme.less"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\slick-theme.scss",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick-theme.scss"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\slick.css.map",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick.css.map"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\slick.js",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\slick.less",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick.less"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\slick-1.8.1\\slick\\slick.scss",
+      "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Alps Hiking.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Alps Hiking.props",
+      "PackagePath": "build\\Alps Hiking.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Alps Hiking.props",
+      "PackagePath": "buildMultiTargeting\\Alps Hiking.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Alps Hiking.props",
+      "PackagePath": "buildTransitive\\Alps Hiking.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

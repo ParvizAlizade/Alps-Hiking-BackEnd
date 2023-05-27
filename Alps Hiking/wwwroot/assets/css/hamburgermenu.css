@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+/**********ul.toogle*********/
+.container ul.toggle{
+    z-index: 5;
+    width: 30px;   
+    height: 25px;
+    cursor: pointer;
+    padding-left: 0px;
+}
+.container ul.toggle li{
+    position: absolute;
+    transform: translateY(-50%);
+    height: 1px;  width: 30px;
+    list-style: none;
+    background: black;
+    transition: .9s;
+}
+.container ul.toggle li:nth-of-type(1){
+    top:55%;
+}
+.container ul.toggle li:nth-of-type(2){
+    top: 75%;
+}
+.container ul.toggle li:nth-of-type(3){
+    top: 95%;
+}
+.container ul.toggle.active li:nth-of-type(1){
+    top: 70%;
+    transform: translateY(-50%) rotate(45deg);
+}
+.container ul.toggle.active li:nth-of-type(2){
+    left: -100%;
+    opacity: 0;
+}
+.container ul.toggle.active li:nth-of-type(3){
+    top: 70%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+/******Sidebar******/
+.container .sidebar{
+    position: fixed;
+    top: 0;  left: -350px;
+    background: #262626;
+    width: 350px;   height: 100vh;
+    box-sizing: border-box;
+    padding: 50px 40px;
+    text-align: center;
+    transition: .9s;
+    z-index: 4;
+}
+.container .sidebar.active{
+    left: 0;
+}
+.container .sidebar img{
+    position: relative;
+    width: 150px;  height: 150px;
+    border-radius: 50%;
+    background: #fff;    
+    left: 15px;
+}
+.container .sidebar img:hover{
+    background:#ff5722;
+}
+.container .sidebar ul.menu{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.container .sidebar ul.menu li{
+    list-style: none;
+}
+.container .sidebar ul.menu li a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;  text-transform: uppercase;
+    color: #fff;
+    width: 100%;  padding: 10px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.container .sidebar ul.menu li:hover a{
+    background: #ff5722;
+}
+.container .sidebar ul.social-icon{
+    position: relative;
+    margin-top: 30%;
+    width: 100%;   height: 55px;
+}
+.container .sidebar ul.social-icon li{
+    list-style: none;
+    width: calc(100% /5);  height: 100%;
+    float: left;
+}
+.container .sidebar ul.social-icon li a{
+    text-decoration: none;
+    display: inline-block; 
+    width: 100%;   height: 100%; 
+    position: relative;
+    color: #fff;  
+    border-radius: 50%;
+    font-size: 25px;    
+}
+.container .sidebar ul.social-icon li:hover a{
+    background: #ff5722;
+}
+.container .sidebar ul.social-icon a .fa{
+    line-height: 55px;
+}

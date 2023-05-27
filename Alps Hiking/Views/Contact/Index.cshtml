@@ -1,0 +1,90 @@
+﻿@model List<Setting>
+@inject Alps_Hiking.Services.LayoutService layoutservice
+@{
+    ViewData["Title"] = "Contact Page";
+    List<Slider> sliders = ViewBag.Slider;
+
+}
+
+@section Link {
+    <link rel="stylesheet" href="~/assets/scss/contact.css">
+}
+
+<main>
+    <section id="slider">
+        <div class="mainphoto">
+            <img src="./assets/images/slider/@sliders.Find(s=>s.Title=="Contact").ImagePath"
+                 alt="">
+        </div>
+        <div class="text">
+            <h1 class="">Contact Us</h1>
+        </div>
+    </section>
+
+    <section id="contactdetails">
+        <div class="container">
+            <div class="row d-flex text-center">
+                <div class="col-lg-4 col-md-4">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>Phone</h4>
+                    <p>A wonderful serenity has taken possession </p>
+                    <span>@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "PhoneNumber")?.Value)</span>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>A wonderful serenity has taken possession</p>
+                    <span>@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "Email")?.Value)</span>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <h4>Location</h4>
+                    <p>
+                        @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "Location")?.Value)
+                    </p>
+                    <span><a href="">View On Google Map</a></span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="map">
+        @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "LocationMap")?.Value)
+    </section>
+
+    <section id="adress">
+        <div class="leftside col-lg-6">
+            <div class="image">
+                <img src="./assets/images/toursphotos/pexels-photo-1.jpg" alt="">
+                <div class="desc">
+                    <h2>London</h2>
+                    <p>United State</p>
+                    <p>Kingston</p>
+                    <p>Manhattan</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rightisde col-lg-6">
+
+
+            <div class="image">
+                <img src="./assets/images/toursphotos/pexels-photo-24377.jpg" alt="">
+
+                <div class="desc">
+                    <h2>California</h2>
+                    <p>78 Collective Street</p>
+                    <p>Manhattan</p>
+                    <p>Kingston</p>
+                    <p>United State</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+

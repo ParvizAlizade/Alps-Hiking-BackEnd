@@ -1,0 +1,325 @@
+﻿@inject Alps_Hiking.Services.LayoutService layoutservice
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/assets/Bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/assets/css/button.css">
+    <link rel="stylesheet" href="~/assets/css/hamburgermenu.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-digital.min.css"
+          integrity="sha512-DXm7BvgNARRYSwwFSHhRn0ZL4tJG+AAOy50IJ/IU4cLnF2hCXd2J1UiubYsdEThHUjKzBjlqXWpLCGoEuPy8/Q=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="~/assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="~/assets/slick-1.8.1/slick/slick-theme.css">
+    @RenderSection("Link",false)
+
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="topheader">
+            <div class="container-fluid">
+                <div class="row d-flex">
+                    <div class="leftside col-lg-5 col-md-4 d-flex">
+                        <div class="phone d-flex ">
+                            <i class="fa-solid fa-phone"></i>
+                            <a style="text-decoration: none;" href="tel:+9945157773">
+                                <p>@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "PhoneNumber")?.Value)</p>
+                            </a>
+                        </div>
+                        <div class="email d-md-none d-lg-block">
+                            <i class="fa-solid  fa-envelope"></i>
+                            <p><a style="text-decoration: none;" href="mailto:">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "Email")?.Value)</a></p>
+                        </div>
+                    </div>
+                    <div class="rightside d-flex col-md-8 col-lg-7 ">
+                        <div>
+                            <a href="https://www.facebook.com/">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "FacebookIcon")?.Value)</a>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a style="display:none" href="https://www.flickr.com/">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "FlickrIcon")?.Value)</a>
+                            }
+                            else
+                            {
+                            <a href="https://www.flickr.com/">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "FlickrIcon")?.Value)</a>
+                            }
+                            <a href="https://support.google.com/answer/2451065?hl=en">
+                                @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "GooglePlusIcon")?.Value)
+                            </a>
+                            <a href="https://twitter.com/">@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "TwitterIcon")?.Value)</a>
+                           
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a style="text-decoration:none;padding-right:11px;padding-left:11px" asp-controller="Admin" asp-action="Index">Admin Panel</a>
+                                    <a style="text-decoration:none" asp-controller="Account" asp-action="LogOut">Log out</a>
+
+                                }
+                                else
+                                {
+                                <a>@User.Identity.Name</a>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <a style="text-decoration:none" asp-controller="Account" asp-action="LogOut">Log out</a>    
+                                }
+                               
+                            }
+                            else
+                            {
+                                @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "LoginIcon")?.Value)
+                                <span><a style="text-decoration: none;" asp-action="Login" asp-controller="Account">Login</a></span>
+                                @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "RegisterIcon")?.Value)
+                                <span><a style="text-decoration: none;" asp-action="Register" asp-controller="Account">Sign Up</a></span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bottomheader">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="col-lg-11 d-lg-block d-md-none logoside">
+                        <ul>
+                            <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                            <li><a asp-action="Index" asp-controller="Tour"> Our Tours </a></li>
+                            <li><a asp-action="Index" asp-controller="Destination"> Destinations </a></li>
+                            <li>
+                                <a asp-action="Index" asp-controller="Home"><img src="~/assets/images/slider/@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "LogoBig")?.Value)" alt=""></a>
+                            </li>
+                            <li><a asp-action="Index" asp-controller="Team"> Team</a></li>
+                            <li><a asp-action="Index" asp-controller="About"> About Us </a></li>
+                            <li><a asp-controller="Contact" asp-action="Index"> Contact </a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-logo d-flex align-items-center col-md-6 d-lg-none ">
+                        <a href="./index.html"><img src="~/assets/images/slider/@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "MobileLogo")?.Value)" alt=""></a>
+                    </div>
+                    <div class="basketside col-lg-1 col-md-6 d-flex justify-content-end">
+                        <i class="fa-solid basket fa-cart-shopping"></i>
+                        <div class="hamburgermenu d-lg-none">
+                            <ul class="toggle">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <div class="sidebar">
+                                <img src="~/assets/images/slider/asets_20.jpg">
+                                <ul class="menu">
+                             <li><a asp-action="Index" asp-controller="Home"> Home </a></li>
+                             <li><a asp-action="Index" asp-controller="Tour"> Our Tours </a></li>
+                             <li><a asp-action="Index" asp-controller="Destination"> Destinations </a></li>
+                             <li><a asp-action="Index" asp-controller="Team"> Team</a></li>
+                             <li><a asp-action="Index" asp-controller="About"> About Us </a></li>
+                             <li><a asp-controller="Contact" asp-action="Index"> Contact </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="basket-menu d-none inside">
+            <div class="title">
+                <h5>Cart</h5>
+                <i class="fa-solid X fa-x"></i>
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <div class="image">
+                        <img src="~/assets/images/toursphotos/1f32b7f3-04e6-4a37-836b-817620cb5565.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="about"><span class="count">5 x</span> <h6 class="name">Montenegro Hiking-Via Dinarica</h6></div>
+                        <br><h5>$890.90</h5>
+                    </div>
+                    <div class="trash">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="item">
+                    <div class="image">
+                        <img src="~/assets/images/toursphotos/1f32b7f3-04e6-4a37-836b-817620cb5565.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="about"><span class="count">5 x</span> <h6 class="name">Montenegro Hiking-Via Dinarica</h6></div>
+                        <br><h5>$890.90</h5>
+                    </div>
+                    <div class="trash">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="item">
+                    <div class="image">
+                        <img src="~/assets/images/toursphotos/1f32b7f3-04e6-4a37-836b-817620cb5565.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="about"><span class="count">5 x</span> <h6 class="name">Montenegro Hiking-Via Dinarica</h6></div>
+                        <br><h5>$890.90</h5>
+                    </div>
+                    <div class="trash">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="item">
+                    <div class="image">
+                        <img src="~/assets/images/toursphotos/1f32b7f3-04e6-4a37-836b-817620cb5565.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="about"><span class="count">5 x</span> <h6 class="name">Montenegro Hiking-Via Dinarica</h6></div>
+                        <br><h5>$890.90</h5>
+                    </div>
+                    <div class="trash">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="~/assets/images/toursphotos/1f32b7f3-04e6-4a37-836b-817620cb5565.jpg" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="about"><span class="count">5 x</span> <h6 class="name">Montenegro Hiking-Via Dinarica</h6></div>
+                        <br><h5>$890.90</h5>
+                    </div>
+                    <div class="trash">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="subtotal">
+                <h4>Subtotal</h4>
+                <h6 id="subtotal">$340</h6>
+            </div>
+
+            <div class="button">
+                <button class="btn ">Checkout</button>
+            </div>
+
+            <div class="closebutton">
+                <button class="btn btn-dark">Close</button>
+            </div>
+
+
+        </div>
+    </header>
+
+
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="topfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="awards">
+                                <h3>Our Awards</h3>
+                                <p>
+                                    @Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "AwardsDesc")?.Value)
+                                </p>
+                                <div class="image">
+                                    <img src="~/assets/images/slider/@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "OurAwardsImage")?.Value)" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-5  col-sm-12">
+                            <div class="contact">
+                                <h3>Contact Info</h3>
+                                <div class="infos">
+                                    <div class="content">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "PhoneNumber")?.Value)</span>
+                                    </div>
+                                    <div class="content">
+                                        <i class="fa-solid fa-map-location-dot"></i>
+                                        <span>@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "Location")?.Value)</span>
+                                    </div>
+                                    <div class="content">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "WorkHour")?.Value)</span>
+                                    </div>
+                                    <div class="content">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "Email")?.Value)</span>
+                                    </div>
+                                </div>
+                                <div class="links">
+                                    <i class="fa-brands fa-youtube" style="color: #cc181e;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #00c3f3;"></i>
+                                    <i class="fa-brands fa-pinterest-p" style="color: #bd081c;"></i>
+                                    <i class="fa-brands fa-facebook" style="color: #164eb6;"></i>
+                                    <i class="fa-brands fa-instagram" style="color: #ff172f;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-12 col-md-3">
+                            <div class="pay col-md-12">
+                                <div class="allinf">
+                                    <h3>Pay Safely</h3>
+                                    <p>@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "PaymentDesc")?.Value)</p>
+                                    <div class="images">
+                                        <img src="~/assets/images/partners/@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "PayPalIcon")?.Value)" alt="">
+                                        <img src="~/assets/images/partners/@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "AmericanExpressIcon")?.Value)"
+                                             alt="">
+                                        <img src="~/assets/images/partners/@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "VisaIcon")?.Value)" alt="">
+                                        <img src="~/assets/images/partners/@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "MasterCardIcon")?.Value)" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottomfooter">
+                <span>COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</span>
+            </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+            integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/Bootstrap/js/bootstrap.esm.min.js"></script>
+    <script src="~/assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="~/assets/OwlCarousel2-2.3.4/"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+            integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/assets/js/hamburgermenu.js"></script>
+    <script src="~/assets/js/basket.js"></script>
+    @RenderSection("Scripts",false)
+</body>
+
+</html>

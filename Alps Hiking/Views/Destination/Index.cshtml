@@ -1,0 +1,54 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Destination Page";
+}
+
+@section Link {
+    <link rel="stylesheet" href="~/assets/scss/destinations.css">
+}
+    <main>
+        <section id="slider">
+            <a >
+                <div class="mainphoto">
+                    <img src="~/assets/images/slider/@(Model.Slider.Find(x=>x.Title=="Destinations").ImagePath)" alt="">
+                </div>
+            </a>
+            <div class="text">
+                <h1 class="">@Model.Slider.Find(x=>x.Title=="Destinations").Title</h1>
+                <p>Explore Tours By Destinations</p>
+            </div>
+        </section>
+
+
+        <section id="countries">
+            <div class="allcountries tab_content">
+                <div class="container">
+                    <div class="row">
+                        <form class="form-inline col-lg-12  my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search" aria-label="Search">
+                        </form>
+                        <h1>Choose Your Country</h1>
+
+                       @foreach (Destiantion item in Model.Destiantion)
+                    {
+                        <div class="col-lg-4 hedd">
+                            <div class="country-card featured-item">
+                                <div class="image">
+                                    <a asp-controller="tour" asp-action="index" asp-route-destinationId="@item.Id">
+                                    <img src="~/assets/images/toursphotos/@item.ImagePath" alt="">
+                                    <h4>@item.Name</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                        <p id="not_found"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+@section Scripts {
+    <script src="~/assets/js/destination.js"></script>
+}

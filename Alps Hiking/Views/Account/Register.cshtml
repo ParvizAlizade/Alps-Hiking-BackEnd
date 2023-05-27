@@ -1,0 +1,64 @@
+﻿@model RegisterVM
+@section Link {
+    <link rel="stylesheet" href="~/assets/css/register.css">
+}
+<main>
+        <div class="container">
+            <div class="row">
+                <div class="allform">
+                    <div style="border-radius:3%" class="col-lg-5 col-md-9">
+                        <h3>Create an account</h3>
+                    <form asp-action="Register" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <div  >
+                            <input asp-for="Firstname" type="text" placeholder="Firstname" class="form-control" id="exampleInputFirstName1" aria-describedby="Firstname">
+                            <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="Firstname"></span>
+                        </div>
+                        <div  >
+                            <input asp-for="Lastname" type="text" placeholder="Lastname" class="form-control" id="exampleInputLastname1" aria-describedby="Lastname">
+                            <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="Lastname"></span>
+                        </div>
+                        <div  >
+                            <input asp-for="Username" type="text" placeholder="Username" class="form-control" id="exampleInputUsername1" aria-describedby="emailHelp">
+                            <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="Username"></span>
+                        </div>
+                        <div  >
+                            <input asp-for="Email" type="email" placeholder="Email" class="form-control" id="exampleInputEmail">
+                            <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="Email"></span>
+                        </div>
+                        <div  >
+                            <input asp-for="Password" type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+                            <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="Password"></span>
+                        </div>
+                        <div  >
+                            <input asp-for="ConfirmPassword" type="password" placeholder="Confirm Password" class="form-control" id="exampleInputConfirmPassword1" aria-describedby="Confirm">
+                            <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="ConfirmPassword"></span>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input asp-for="Terms" type="checkbox" class="form-check-input checkbox" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                                I agree to Terms and Cookie Policy
+                            </label>
+                            <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="Terms"></span>
+
+                        </div>
+                        <button type="submit" class="btn">Sign in</button>
+                    </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <style>
+        body{
+            height:130vh !important;
+        }
+        footer{
+           display:none;
+        }
+    </style>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+}
