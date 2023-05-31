@@ -2,6 +2,7 @@
 @model Tour
 @{
     ViewData["Title"] = "Detail Page";
+    List<Tour> related = ViewBag.Relateds;
 }
 
 
@@ -394,127 +395,95 @@
                                 <div class="card-header">
                                     Tour Reviews
                                 </div>
+
+
                                 <div class="card-body">
+                                                @{
+                                                    int count = 0;
+                                                }
                                     @foreach (Comment cmt in Model.Comments)
                                     {
                                         if (cmt.TourId == Model.Id)
                                         {
-                                            <div style="display:flex;justify-content:space-between">
-                                                <h5>@cmt.User.Fullname</h5>
+                                        <div class="comment">
+                                                <div style="display:none">
+                                                    @(count++)
+                                                </div>
                                                 @if (User.Identity.Name == cmt.User.UserName)
                                                 {
-                                                    <form method="post" action="/Tour/DeleteComment" class="deleteArea">
-                                                        <button type="submit" name="commentId" value="@cmt.Id" class="delete btn btn-danger">
-                                                            Delete
-                                                        </button>
+                                                    <div style="display:flex;justify-content:space-between">
+                                                        <h5>@cmt.User.Fullname</h5>
+                                                        <div class="d-flex justify-content-between">
+                                                            <button id="edit-button-@count" class=" btn  btn-primary me-2" data-comment-id="@cmt.Id" data-comment-text="@cmt.Text">
+                                                                Edit
+                                                            </button>
+                                                            <form method="post" action="/Tour/DeleteComment" class="deleteArea">
+                                                                <button type="submit" name="commentId" value="@cmt.Id" class="delete btn btn-danger">
+                                                                    Delete
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                    <form id="edit-comment-@count" class="d-none" asp-controller="Tour" asp-action="UpdateComment" asp-route-commentId="@cmt.Id" method="post">
+                                                        <div class="form-group">
+                                                            <textarea class="form-control mt-2" name="Text" rows="3">@cmt.Text</textarea>
+                                                        </div>
+                                                        <button type="submit" class="mt-3 mb-3 btn btn-primary">Save</button>
                                                     </form>
                                                 }
-                                            </div>
-                                            <p>@cmt.Text</p>
-                                            <small class="text-muted">Posted on <b>@cmt.TimeStamp</b></small>
-                                            <hr>
+
+                                                @{
+                                                    var defaultStars = 5-cmt.Rating;
+                                                }
+
+                                                <p>@cmt.Text</p>
+                                                <small class="text-muted">Posted on <b>@cmt.TimeStamp</b>
+                                                    <div class="text-warning mt-3">
+
+                                                       @for (int i = 1; i <=cmt.Rating; i++)
+                                                        {
+                                                            <i class=" fas fa-star"></i>
+ 
+                                                        }
+
+                                                        @for (int i = 1; i <= defaultStars; i++)
+                                                        {
+                                                            <i class="far fa-star"></i>
+
+                                                        }
+                                                    </div>
+                                                </small>
+                                                <hr>
+                                        </div>
                                         }
                                     }
+                       
 
                                     @if (User.Identity.IsAuthenticated)
                                     {
                                         <form id="commentForm" action="/Tour/AddComment/@Model.Id" method="post">
-                                            <div class="form-group">
-                                                <label class="mb-3 mt-4">Write Your Comment</label>
-                                                <textarea class="form-control" placeholder="Write Your Comment here" name="Text" rows="3"></textarea>
+                                            <div class="form-group mb-3 mt-4 d-flex justify-content-between">
+                                                <label class="">Write Your Comment</label>
+                                                <div class="text-warning">
+                                                    <i class="ratingStar fas fa-star" data-value="1"></i>
+                                                    <i class="ratingStar far fa-star" data-value="2"></i>
+                                                    <i class="ratingStar far fa-star" data-value="3"></i>
+                                                    <i class="ratingStar far fa-star" data-value="4"></i>
+                                                    <i class="ratingStar far fa-star" data-value="5"></i>
+                                                </div>
+                                                <input type="hidden" name="Rating" id="ratingsValue" value="1">
                                             </div>
+                                                <textarea class="form-control" placeholder="Write Your Comment here" name="Text" rows="3"></textarea>
                                             <br>
                                             <button type="submit" class="btn btn-success">Leave a Review</button>
                                         </form>
+                                        <div class="text-center" id="loadmore">
+                                            <button class="btn btn-dark mt-4" id="loadmorebutton">Load More</button>
+                                        </div>
                                     }
                                 </div>
                             </div>
                         </div>
-
-                        <script>
-                            $(document).ready(function () {
-                                $("#commentForm").submit(function (event) {
-                                    event.preventDefault();
-
-                                    var form = $(this);
-                                    var url = form.attr("action");
-                                    var formData = new FormData(form[0]);
-
-                                    $.ajax({
-                                        type: "POST",
-                                        url: url,
-                                        data: formData,
-                                        processData: false,
-                                        contentType: false,
-                                        success: function (data) {
-                                            var commentSection = $("#comment");
-                                            commentSection.empty();
-
-                                            data.forEach(function (comment) {
-                                                var html = `
-                                                            <div style="display:flex;justify-content:space-between">
-                                                                <h5>${comment.User.Fullname}</h5>
-                                                        `;
-
-                                                if (User.Identity.Name === comment.User.UserName) {
-                                                    html += `
-                                                                <form method="post" action="/Tour/DeleteComment" class="deleteArea">
-                                                                    <button type="submit" name="commentId" value="${comment.Id}" class="delete btn btn-danger">
-                                                                        Delete
-                                                                    </button>
-                                                                </form>
-                                                            `;
-                                                }
-
-                                                html += `
-                                                                </div>
-                                                                <p>${comment.Text}</p>
-                                                                <small class="text-muted">Posted on <b>${comment.TimeStamp}</b></small>
-                                                                <hr>
-                                                            `;
-
-                                                commentSection.append(html);
-                                            });
-                                        },
-                                        error: function (xhr, status, error) {
-                                            console.log(xhr.responseText);
-                                        }
-                                    });
-                                });
-                            });
-
-
-                            document.getElementById("commentForm").addEventListener("submit", function (event) {
-                                event.preventDefault();
-
-                                var form = event.target;
-                                var formData = new FormData(form);
-
-                                fetch(form.action, {
-                                    method: form.method,
-                                    body: formData
-                                })
-                                    .then(function (response) {
-                                        if (response.ok) {
-                                            return response.text(); // response.json() yerine response.text() kullanıyoruz
-                                        } else {
-                                            throw new Error("Error: " + response.status);
-                                        }
-                                    })
-                                    .then(function (data) {
-                                        // Handle the response data
-                                        console.log(data);
-                                        // Refresh the comment section dynamically
-                                        var commentSection = document.getElementById("commentSection");
-                                        commentSection.innerHTML = data;
-                                    })
-                                    .catch(function (error) {
-                                        console.log(error);
-                                        // Handle any errors
-                                    });
-                            });
-
-                        </script>
 
 
 
@@ -526,137 +495,44 @@
                                 <h2>Related Tours</h2>
                             </div>
                             <div class="allcards">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tour-card">
-                                        <div class="image">
-                                            <img src="~/assets/images/toursphotos/pamela-saunders-384317-unsplash-1500x1000.jpg"
-                                                 alt="">
-                                        </div>
-                                        <div class="about">
-                                            <div class="leftside">
-                                                <div class="name">
-                                                    <h6>St. Moritz Ski Packages</h6>
-                                                </div>
-                                                <div class="review">
-                                                    <div class="staricons">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span>(3 Reviews)</span>
-                                                </div>
+                               @foreach (var item in related)
+                                {
+                                    <div class="col-lg-6 col-md-6 relatedtours">
+                                        <div class="tour-card">
+                                            <div class="image">
+                                                <img src="~/assets/images/toursphotos/@item.TourImages.FirstOrDefault(ti=>ti.IsMain==true)?.Path"
+                                                     alt="">
                                             </div>
-                                            <div class="rightside">
-                                                <div class="discountprice">
-                                                    <del>$600</del>
+                                            <div class="about">
+                                                <div class="leftside">
+                                                    <div class="name">
+                                                        <h5>@item.Name</h5>
+                                                    </div>
+                                                    <div class="review">
+                                                        <div class="staricons">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <span>(3 Reviews)</span>
+                                                    </div>
                                                 </div>
-                                                <div class="price">
-                                                    <span>$400</span>
+                                                <div class="rightside">
+                                                    <div class="discountprice">
+                                                        <del>$@item.DiscountPrice</del>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>$@item.Price</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tour-card ">
-                                        <div class="image">
-                                            <img src="~/assets/images/toursphotos/oziel-gomez-555955-unsplash-700x500.jpg"
-                                                 alt="">
-                                        </div>
-                                        <div class="about">
-                                            <div class="leftside">
-                                                <div class="name">
-                                                    <h6>St. Moritz Ski Packages</h6>
-                                                </div>
-                                                <div class="review">
-                                                    <div class="staricons">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span>(3 Reviews)</span>
-                                                </div>
-                                            </div>
-                                            <div class="rightside">
-                                                <div class="discountprice">
-                                                    <del>$600</del>
-                                                </div>
-                                                <div class="price">
-                                                    <span>$400</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tour-card ">
-                                        <div class="image">
-                                            <img src="~/assets/images/toursphotos/george-stackpole-114522-unsplash-700x500.jpg"
-                                                 alt="">
-                                        </div>
-                                        <div class="about">
-                                            <div class="leftside">
-                                                <div class="name">
-                                                    <h6>St. Moritz Ski Packages</h6>
-                                                </div>
-                                                <div class="review">
-                                                    <div class="staricons">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span>(3 Reviews)</span>
-                                                </div>
-                                            </div>
-                                            <div class="rightside">
-                                                <div class="discountprice">
-                                                    <del>$600</del>
-                                                </div>
-                                                <div class="price">
-                                                    <span>$400</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="tour-card ">
-                                        <div class="image">
-                                            <img src="~/assets/images/toursphotos/joshua-earle-234740-unsplash-900x500.jpg"
-                                                 alt="">
-                                        </div>
-                                        <div class="about">
-                                            <div class="leftside">
-                                                <div class="name">
-                                                    <h6>St. Moritz Ski Packages</h6>
-                                                </div>
-                                                <div class="review">
-                                                    <div class="staricons">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                    </div>
-                                                    <span>(3 Reviews)</span>
-                                                </div>
-                                            </div>
-                                            <div class="rightside">
-                                                <div class="discountprice">
-                                                    <del>$600</del>
-                                                </div>
-                                                <div class="price">
-                                                    <span>$400</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                }
+                                <div id="loadmore">
+                                    <button class="btn text-center btn-dark mt-5" id="loadmorebutton">Load More</button>
                                 </div>
                             </div>
                         </div>
@@ -746,7 +622,42 @@
                         
     </section>
 </main>
+<style>
+    .relatedtours,.comment{
+        display:none;
+    }
+</style>
+<script>
 
+    document.addEventListener("DOMContentLoaded", function (event) {
+        $(".relatedtours").slice(0, 4).show();
+        $("#loadmorebutton").on("click", function (e) {
+                e.preventDefault();
+            $(".relatedtours:hidden").slice(0, 2).slideDown();
+        });
+
+        $(".comment").slice(0, 3).show();
+        $("#loadmorebutton").on("click", function (e) {
+            e.preventDefault();
+            $(".comment:hidden").slice(0, 3).slideDown();
+        });
+
+        $(".ratingStar").hover(function (){
+            $(".ratingStar").addClass("far").removeClass("fas");
+            $(this).addClass("fas").removeClass("far");
+            $(this).prevAll(".ratingStar").addClass("fas").removeClass("far");
+        });
+
+        $(".ratingStar").click(function(){
+           var starValue= $(this).attr("data-value");
+           $("#ratingsValue").val(starValue);   
+        })
+
+        document.getElementById("edit-button-@count").addEventListener("click", function () {
+        document.getElementById("edit-comment-@count").classList.toggle("d-none");
+    });
+    });
+</script>
 
 @section Scripts {
     <script src="~/assets/js/detail.js"></script>

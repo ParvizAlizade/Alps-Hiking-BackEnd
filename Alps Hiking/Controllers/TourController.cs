@@ -5,10 +5,30 @@ using Alps_Hiking.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Alps_Hiking.Controllers
 {
 
+
+    public class TourComparer : IEqualityComparer<Tour>
+    {
+        public bool Equals(Tour? x, Tour? y)
+        {
+            if (x == null && y == null)
+                return true;
+            if (x == null || y == null)
+                return false;
+            return x.Id == y.Id;
+        }
+
+        public int GetHashCode([DisallowNull] Tour obj)
+        {
+            return obj.Id.GetHashCode();
+        }
+    }
+
+         
 
 
     public class TourController : Controller
@@ -57,6 +77,8 @@ namespace Alps_Hiking.Controllers
                                      .AsSingleQuery().FirstOrDefault(d => d.Id == id);
 
             ViewBag.Comment = _context.Comments.ToList();
+			ViewBag.Relateds = RelatedTours(tours, tour, id);
+
 
 
             if (tour is null) return NotFound();
@@ -89,7 +111,9 @@ namespace Alps_Hiking.Controllers
                 User = user,
                 TimeStamp = DateTime.Now,
                 TourId = tour.Id,
-                Tour = tour
+                Tour = tour,
+                Rating=newComment.Rating
+                
             };
 
             _context.Comments.Add(comment);
@@ -114,6 +138,54 @@ namespace Alps_Hiking.Controllers
             }
             return RedirectToAction(nameof(Details), new { id = comment.TourId });
         }
+        public IActionResult EditComment(int commentId)
+        {
+            Comment comment = _context.Comments.Find(commentId);
+            if (comment == null)
+            {
+                return NotFound();
+            }
+
+            return View(comment);
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpdateComment(int commentId, string text)
+        {
+            Comment comment = await _context.Comments.FindAsync(commentId);
+            if (comment == null)
+            {
+                return NotFound();
+            }
+
+            comment.Text = text;
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Details), new { id = comment.TourId });
+        }
+
+        static List<Tour> RelatedTours(IQueryable<Tour> queryable, Tour tour, int id)
+        {
+            List<Tour> relateds = new List<Tour>();
+
+            if (tour.CategoryId != 0)
+            {
+                List<Tour> related = queryable
+                    .Include(p => p.Itineraries)
+                    .Include(d => d.Comments)
+                    .Include(p => p.Destination)
+                    .Include(p => p.Category)
+                    .Include(p => p.TourDates)
+                    .Include(p => p.TourImages)
+                    .AsEnumerable()
+                    .Where(p => p.CategoryId == tour.CategoryId && p.Id != id && !relateds.Contains(p, new TourComparer()))
+                    .ToList();
+
+                relateds.AddRange(related);
+            }
+
+            return relateds;
+        }
+
 
     }
 }

@@ -22,12 +22,14 @@ namespace Alps_Hiking.Controllers
                Slider= _context.Sliders.ToList(),   
                Destiantion=_context.Destiantions.ToList(),
                Partners = _context.Partners.Take(6).ToList(),
-
+               Comments = _context.Comments.Include(c=>c.User).Take(8).ToList(),
                Tours = _context.Tours
                  .Include(t=>t.Category)
                     .Include(t=>t.TourDates)
                        .Include(t=>t.TourImages)
                          .Include(t=>t.Itineraries)
+                         .Include(t=>t.Comments)
+
                            .Include(t=>t.PassengerCounts)
                              .Include(t=>t.Destination)
                                 .OrderBy(t => t.Price)

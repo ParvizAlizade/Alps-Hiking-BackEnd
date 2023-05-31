@@ -269,156 +269,124 @@
             <div class="line"></div>
         </div>
         <div class="allreviews ">
-            <div class="review">
-                <div class="desc">
-                    <span>
-                        Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at
-                        lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus
-                        magna, vel scelerisq.
-                    </span>
-                </div>
+           @foreach (Comment item in Model.Comments)
+            {
+                <div style="height:65vh" class="review d-flex align-items-center">
+                    <div>
+                        <div class="desc">
+                            <h5 class="mb-3" style="color:midnightblue">
+                                @item.Tour.Name
+                            </h5>
+                            <div class="ratingg text-warning">
+                                @if (item.Rating == 0)
+                                {
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                }
+                                @if (item.Rating > 0 && item.Rating < 2)
+                                {
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
 
-                <div class="userdetails">
-                    <div class="name">
-                        <p>Jane Smith</p>
-                    </div>
-                    <div class="staricons">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="profession">
-                        <p>Blogger</p>
-                    </div>
-                </div>
-            </div>
-            <div class="review">
-                <div class="desc">
-                    <span>
-                        Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at
-                        lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus
-                        magna, vel scelerisq.
-                    </span>
-                </div>
+                                }
+                                @if (item.Rating == 2)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
 
-                <div class="userdetails">
-                    <div class="name">
-                        <p>Jane Smith</p>
-                    </div>
-                    <div class="staricons">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="profession">
-                        <p>Blogger</p>
-                    </div>
-                </div>
-            </div>
-            <div class="review">
-                <div class="desc">
-                    <span>
-                        Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at
-                        lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus
-                        magna, vel scelerisq.
-                    </span>
-                </div>
+                                }
+                                @if (item.Rating > 2 && item.Rating < 4)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                }
+                                @if (item.Rating == 4)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
 
-                <div class="userdetails">
-                    <div class="name">
-                        <p>Jane Smith</p>
-                    </div>
-                    <div class="staricons">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="profession">
-                        <p>Blogger</p>
-                    </div>
-                </div>
-            </div>
-            <div class="review">
-                <div class="desc">
-                    <span>
-                        Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at
-                        lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus
-                        magna, vel scelerisq.
-                    </span>
-                </div>
+                                }
+                                @if (item.Rating > 4 && item.Rating < 6)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                }
+                                @if (item.Rating == 6)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                }
 
-                <div class="userdetails">
-                    <div class="name">
-                        <p>Jane Smith</p>
-                    </div>
-                    <div class="staricons">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="profession">
-                        <p>Blogger</p>
-                    </div>
-                </div>
-            </div>
-            <div class="review">
-                <div class="desc">
-                    <span>
-                        Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at
-                        lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus
-                        magna, vel scelerisq.
-                    </span>
-                </div>
-
-                <div class="userdetails">
-                    <div class="name">
-                        <p>Jane Smith</p>
-                    </div>
-                    <div class="staricons">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="profession">
-                        <p>Blogger</p>
-                    </div>
-                </div>
-            </div>
-            <div class="review">
-                <div class="desc">
-                    <span>
-                        Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at
-                        lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus
-                        magna, vel scelerisq.
-                    </span>
-                </div>
-
-                <div class="userdetails">
-                    <div class="name">
-                        <p>Jane Smith</p>
-                    </div>
-                    <div class="staricons">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="profession">
-                        <p>Blogger</p>
+                                @if (item.Rating > 6 && item.Rating < 8)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                }
+                                @if (item.Rating == 8)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                }
+                                @if (item.Rating > 8 && item.Rating < 10)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                }
+                                @if (item.Rating == 10)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                }
+                            </div>
+                            <br>
+                            <span>
+                                @(item.Text.Substring(0, Math.Min(item.Text.Length, 200)) + (item.Text.Length > 100 ? "..." : ""))
+                            </span>
+                        </div>
+                        <div class="userdetails">
+                            <div class="name">
+                                <p>@item.User.Fullname</p>
+                            </div>
+                            <div class="profession">
+                                <p>@item.TimeStamp</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
         </div>
     </section>
 
