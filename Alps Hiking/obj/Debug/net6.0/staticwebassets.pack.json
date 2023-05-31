@@ -181,6 +181,10 @@
       "PackagePath": "staticwebassets\\assets\\Bootstrap\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\ConfirmEmail\\confirmemail.html",
+      "PackagePath": "staticwebassets\\assets\\ConfirmEmail\\confirmemail.html"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\OwlCarousel2-2.3.4\\.gitattributes",
       "PackagePath": "staticwebassets\\assets\\OwlCarousel2-2.3.4\\.gitattributes"
     },
@@ -1541,6 +1545,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\Tokyo_Dollarphotoclub_72848283-copy-700x466.jpg"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\_S6A1420-Edit-Edit.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\_S6A1420-Edit-Edit.jpg"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\_methode_sundaytimes_prod_web_bin_89b102f4-42e8-11ec-b414-b1f6389ab345.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\_methode_sundaytimes_prod_web_bin_89b102f4-42e8-11ec-b414-b1f6389ab345.jpg"
     },
@@ -1635,6 +1643,14 @@
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\paul-gilmore-96153-unsplash-700x500.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\paul-gilmore-96153-unsplash-700x500.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-bri-schneiter-346529 (1).jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pexels-bri-schneiter-346529 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-bri-schneiter-346529.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\toursphotos\\pexels-bri-schneiter-346529.jpg"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-davi-pimentel-2064827.jpg",

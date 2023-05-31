@@ -39,6 +39,39 @@ namespace Alps_Hiking.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("Alps_Hiking.Entities.Comment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("TimeStamp")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("TourId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId1")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TourId");
+
+                    b.HasIndex("UserId1");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("Alps_Hiking.Entities.Destiantion", b =>
                 {
                     b.Property<int>("Id")
@@ -541,6 +574,23 @@ namespace Alps_Hiking.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Alps_Hiking.Entities.Comment", b =>
+                {
+                    b.HasOne("Alps_Hiking.Entities.Tour", "Tour")
+                        .WithMany("Comments")
+                        .HasForeignKey("TourId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Alps_Hiking.Entities.User", "User")
+                        .WithMany("Comments")
+                        .HasForeignKey("UserId1");
+
+                    b.Navigation("Tour");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Alps_Hiking.Entities.Itinerary", b =>
                 {
                     b.HasOne("Alps_Hiking.Entities.Tour", "Tour")
@@ -683,6 +733,8 @@ namespace Alps_Hiking.Migrations
 
             modelBuilder.Entity("Alps_Hiking.Entities.Tour", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("Itineraries");
 
                     b.Navigation("PassengerCounts");
@@ -690,6 +742,11 @@ namespace Alps_Hiking.Migrations
                     b.Navigation("TourDates");
 
                     b.Navigation("TourImages");
+                });
+
+            modelBuilder.Entity("Alps_Hiking.Entities.User", b =>
+                {
+                    b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618
         }

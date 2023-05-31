@@ -24,6 +24,16 @@
         public List<TourDate> TourDates { get; set; }
         public int DestinationId { get; set; }
         public Destiantion Destination { get; set; }
+        public List<Comment> Comments { get; set; }
         public int Rate { get; set; }
+        public Tour()
+        {
+            TourImages = new();
+            Itineraries=new();
+            PassengerCounts = new();
+            TourDates=new();
+            Comments=new();
+        }
     }
+
 }

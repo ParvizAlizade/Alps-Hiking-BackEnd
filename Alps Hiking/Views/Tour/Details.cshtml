@@ -263,7 +263,6 @@
 
                             <span>(3 Reviews)</span>
                         </div>
-
                         <div class="detail">
                             <div class="days">
                                 <i class="fa-regular fa-clock"></i>
@@ -320,7 +319,6 @@
                             </div>
                         </div>
                         <hr>
-
                         <div id="photos">
                             <div class="title">
                                 <i class="fa-solid fa-images"></i>
@@ -344,7 +342,6 @@
                             </div>
                         </div>
                         <hr>
-
                         <div id="itinerary">
                             <div class="title">
                                 <i class="fa-solid fa-pen-nib"></i>
@@ -382,6 +379,145 @@
                           @Html.Raw(Model.Map)
                         </div>
                         <hr>
+
+
+                     
+
+
+                        <div id="comment">
+                            <div class="title mt-5 pt-4 ">
+                                <i style="font-size:20px" class="fa-solid fa-comment"></i>
+                                <h3 style="display:inline;margin-left:10px">Comments</h3>
+                            </div>
+
+                            <div class="card card-outline-secondary my-5">
+                                <div class="card-header">
+                                    Tour Reviews
+                                </div>
+                                <div class="card-body">
+                                    @foreach (Comment cmt in Model.Comments)
+                                    {
+                                        if (cmt.TourId == Model.Id)
+                                        {
+                                            <div style="display:flex;justify-content:space-between">
+                                                <h5>@cmt.User.Fullname</h5>
+                                                @if (User.Identity.Name == cmt.User.UserName)
+                                                {
+                                                    <form method="post" action="/Tour/DeleteComment" class="deleteArea">
+                                                        <button type="submit" name="commentId" value="@cmt.Id" class="delete btn btn-danger">
+                                                            Delete
+                                                        </button>
+                                                    </form>
+                                                }
+                                            </div>
+                                            <p>@cmt.Text</p>
+                                            <small class="text-muted">Posted on <b>@cmt.TimeStamp</b></small>
+                                            <hr>
+                                        }
+                                    }
+
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <form id="commentForm" action="/Tour/AddComment/@Model.Id" method="post">
+                                            <div class="form-group">
+                                                <label class="mb-3 mt-4">Write Your Comment</label>
+                                                <textarea class="form-control" placeholder="Write Your Comment here" name="Text" rows="3"></textarea>
+                                            </div>
+                                            <br>
+                                            <button type="submit" class="btn btn-success">Leave a Review</button>
+                                        </form>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            $(document).ready(function () {
+                                $("#commentForm").submit(function (event) {
+                                    event.preventDefault();
+
+                                    var form = $(this);
+                                    var url = form.attr("action");
+                                    var formData = new FormData(form[0]);
+
+                                    $.ajax({
+                                        type: "POST",
+                                        url: url,
+                                        data: formData,
+                                        processData: false,
+                                        contentType: false,
+                                        success: function (data) {
+                                            var commentSection = $("#comment");
+                                            commentSection.empty();
+
+                                            data.forEach(function (comment) {
+                                                var html = `
+                                                            <div style="display:flex;justify-content:space-between">
+                                                                <h5>${comment.User.Fullname}</h5>
+                                                        `;
+
+                                                if (User.Identity.Name === comment.User.UserName) {
+                                                    html += `
+                                                                <form method="post" action="/Tour/DeleteComment" class="deleteArea">
+                                                                    <button type="submit" name="commentId" value="${comment.Id}" class="delete btn btn-danger">
+                                                                        Delete
+                                                                    </button>
+                                                                </form>
+                                                            `;
+                                                }
+
+                                                html += `
+                                                                </div>
+                                                                <p>${comment.Text}</p>
+                                                                <small class="text-muted">Posted on <b>${comment.TimeStamp}</b></small>
+                                                                <hr>
+                                                            `;
+
+                                                commentSection.append(html);
+                                            });
+                                        },
+                                        error: function (xhr, status, error) {
+                                            console.log(xhr.responseText);
+                                        }
+                                    });
+                                });
+                            });
+
+
+                            document.getElementById("commentForm").addEventListener("submit", function (event) {
+                                event.preventDefault();
+
+                                var form = event.target;
+                                var formData = new FormData(form);
+
+                                fetch(form.action, {
+                                    method: form.method,
+                                    body: formData
+                                })
+                                    .then(function (response) {
+                                        if (response.ok) {
+                                            return response.text(); // response.json() yerine response.text() kullanıyoruz
+                                        } else {
+                                            throw new Error("Error: " + response.status);
+                                        }
+                                    })
+                                    .then(function (data) {
+                                        // Handle the response data
+                                        console.log(data);
+                                        // Refresh the comment section dynamically
+                                        var commentSection = document.getElementById("commentSection");
+                                        commentSection.innerHTML = data;
+                                    })
+                                    .catch(function (error) {
+                                        console.log(error);
+                                        // Handle any errors
+                                    });
+                            });
+
+                        </script>
+
+
+
 
 
 
@@ -526,8 +662,10 @@
                         </div>
                         <hr>
                     </div>
-
                 </div>
+
+
+
                 <div class="rightside col-lg-4">
                     <div class="allsec">
                         <div class="booking">
@@ -535,20 +673,18 @@
                             <div class="priceside">
                                 <i class="fa-solid fa-tag fa-rotate-90"></i>
                                 <span>From</span>
-                                <span id="deletedprice"><del>$@Model.Price</del></span>
-                                <span id="price">$@Model.DiscountPrice</span>
+                                <span id="deletedprice"><del>$2,000</del></span>
+                                <span id="price">$1,700</span>
                             </div>
 
                             <div class="bookingform">
                                 <span id="title">Booking Form</span>
-                                <div  class="mt-5 day">
+                                <div class="day">
                                     <i class="fa-regular fa-calendar"></i>
-                                    <select style="padding: 10px 20px;margin-left:25px; border-color: rgb(207, 207, 207);" name="" id="dateselect">
-                                       @foreach (TourDate item in Model.TourDates)
-                                        {
-                                            <option value="">@item.TourDates</option>
-                                        }
-                                       
+                                    <select style="padding: 10px 20px; border-color: rgb(207, 207, 207);" name="" id="dateselect">
+                                        <option value="">2023-02-15</option>
+                                        <option value="">2023-02-22</option>
+                                        <option value="">2023-02-29</option>
                                     </select>
                                 </div>
 
@@ -563,16 +699,12 @@
                                         <option value="">5</option>
                                         <option value="">6</option>
                                         <option value="">7</option>
-                                        <option value="">8</option>
-                                        <option value="">9</option>
-                                        <option value="">10</option>
-
                                     </select>
                                 </div>
 
                                 <div class="proceed">
                                     <i class="fa-solid fa-bolt"></i>
-                                    <button style="margin-left:23px" class="btn btn-primary">Proceed Booking</button>
+                                    <button class="btn btn-primary">Proceed Booking</button>
                                 </div>
 
                                 <div class="wishlist">
@@ -608,10 +740,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-    </section>
+                </div>
+                </div>
 
-    </div>
+                        
+    </section>
 </main>
 
 

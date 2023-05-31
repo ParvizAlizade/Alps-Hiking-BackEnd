@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+}
+@model string
+
+<h1>E-posta Doğrulama</h1>
+
+<p>
+    @if (!string.IsNullOrEmpty(Model))
+    {
+        <span>E-posta adresi: @Model</span>
+        <br />
+        <span>Lütfen e-posta doğrulamanızı tamamlamak için e-postanızı kontrol edin.</span>
+    }
+    else
+    {
+        <span>E-posta doğrulama işlemi tamamlanmadı.</span>
+    }
+</p>

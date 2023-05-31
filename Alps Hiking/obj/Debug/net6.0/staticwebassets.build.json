@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FLAAZdZbnil/J+5P/goSxYj321KYRIPAYcIaMhxPxSE=",
+  "Hash": "cb9tttmGut/gc57rvQigeEAKcPeHKHSYf9daA4s3TmA=",
   "Source": "Alps Hiking",
   "BasePath": "_content/Alps Hiking",
   "Mode": "Default",
@@ -797,6 +797,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\Bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\ConfirmEmail\\confirmemail.html",
+      "SourceId": "Alps Hiking",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\",
+      "BasePath": "_content/Alps Hiking",
+      "RelativePath": "assets/ConfirmEmail/confirmemail.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\ConfirmEmail\\confirmemail.html"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\css\\about.css",
@@ -2890,6 +2907,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\toursphotos\\_methode_sundaytimes_prod_web_bin_89b102f4-42e8-11ec-b414-b1f6389ab345.jpg"
     },
     {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\_S6A1420-Edit-Edit.jpg",
+      "SourceId": "Alps Hiking",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\",
+      "BasePath": "_content/Alps Hiking",
+      "RelativePath": "assets/images/toursphotos/_S6A1420-Edit-Edit.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\toursphotos\\_S6A1420-Edit-Edit.jpg"
+    },
+    {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\1f32b7f3-04e6-4a37-836b-817620cb5565.jpg",
       "SourceId": "Alps Hiking",
       "SourceType": "Discovered",
@@ -3398,6 +3432,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\toursphotos\\paul-gilmore-96153-unsplash-700x500.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-bri-schneiter-346529 (1).jpg",
+      "SourceId": "Alps Hiking",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\",
+      "BasePath": "_content/Alps Hiking",
+      "RelativePath": "assets/images/toursphotos/pexels-bri-schneiter-346529 (1).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\toursphotos\\pexels-bri-schneiter-346529 (1).jpg"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-bri-schneiter-346529.jpg",
+      "SourceId": "Alps Hiking",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\",
+      "BasePath": "_content/Alps Hiking",
+      "RelativePath": "assets/images/toursphotos/pexels-bri-schneiter-346529.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\toursphotos\\pexels-bri-schneiter-346529.jpg"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Desktop\\Alps Hiking\\Alps Hiking\\wwwroot\\assets\\images\\toursphotos\\pexels-davi-pimentel-2064827.jpg",

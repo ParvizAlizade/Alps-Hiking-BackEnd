@@ -6,7 +6,7 @@ namespace Alps_Hiking.DAL
 {
 	public class AlpsHikingDbContext : IdentityDbContext<User>
 	{
-		public AlpsHikingDbContext(DbContextOptions<AlpsHikingDbContext> options) : base(options)
+        public AlpsHikingDbContext(DbContextOptions<AlpsHikingDbContext> options) : base(options)
 		{
 
 		}
@@ -23,6 +23,7 @@ namespace Alps_Hiking.DAL
         public DbSet<Team> Teams { get; set; }
         public DbSet<TourDate> TourDates { get; set; }
         public DbSet<Partner> Partners { get; set; }
+        public DbSet<Comment> Comments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
