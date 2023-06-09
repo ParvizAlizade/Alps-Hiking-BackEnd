@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Alps_Hiking.Entities.Partner>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagePath)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+             <tr style="background-color:blanchedalmond">
+                <td class="col-sm-12">
+                    <img style="width:150px;height:150px;object-fit:contain;border-radius:0%" src="~/assets/images/partners/@item.ImagePath" />
+                </td>
+            <td >
+                    <a style="padding:15px 30px;background-color:orange;border-radius:2px;color:black;font-weight:600" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    <a style="padding:15px 30px;background-color:dodgerblue;border-radius:2px;color:black;font-weight:600" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    <a style="padding:15px 30px;background-color:red;border-radius:2px;color:black;font-weight:600" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+﻿@model Alps_Hiking.Entities.Destiantion
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Destiantion</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2 col-lg-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10 col-lg-10 text-center">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+         <dd class="col-sm-12">
+            <img style="width:250px;height:250px;object-fit:contain;border-radius:0%" src="~/assets/images/toursphotos/@Model.ImagePath" />
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

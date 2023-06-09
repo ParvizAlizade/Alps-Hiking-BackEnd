@@ -28,14 +28,14 @@ namespace Alps_Hiking.Controllers
         }
     }
 
-         
+
 
 
     public class TourController : Controller
     {
         readonly AlpsHikingDbContext _context;
         private readonly UserManager<User> _userManager;
-        public TourController(AlpsHikingDbContext context,UserManager<User>userManager)
+        public TourController(AlpsHikingDbContext context, UserManager<User> userManager)
         {
             _context = context;
             _userManager = userManager;
@@ -51,39 +51,93 @@ namespace Alps_Hiking.Controllers
                              .Include(t => t.Destination);
 
 
-            if(destinationId != 0)
+            if (destinationId != 0)
             {
                 alltour = alltour.Where(x => x.DestinationId == destinationId);
             }
 
-            List<Tour> tours=alltour.ToList();
+            List<Tour> tours = alltour.ToList();
             ViewBag.Categories = _context.Categories.ToList();
+            ViewBag.Destination = _context.Destiantions.Include(x => x.Tours).ToList();
+            ViewBag.Tours = _context.Tours.ToList();
+
             ViewBag.Slider = _context.Sliders.ToList();
             return View(tours);
         }
+
+        [HttpPost]
+        public IActionResult Index(int[] categoirId, int[] days, double minprice, double maxprice, byte difficulty, int rating, int[] age, int[] destiantions)
+        {
+            IQueryable<Tour> alltour = _context.Tours
+                .Include(t => t.Category)
+                    .Include(t => t.TourDates)
+                       .Include(t => t.TourImages)
+                         .Include(t => t.Itineraries)
+                           .Include(t => t.PassengerCounts)
+                             .Include(t => t.Destination);
+
+
+            if (categoirId.Length > 0)
+            {
+                alltour = alltour.Where(x => categoirId.Contains(x.CategoryId));
+            }
+            if (days.Length > 0)
+            {
+                alltour = alltour.Where(x => days.Contains(x.DayCount));
+            }
+            if (minprice != 0 || maxprice != 0)
+            {
+                alltour = alltour.Where(x => minprice < x.DiscountPrice && x.DiscountPrice < maxprice);
+            }
+
+            if (difficulty != 0)
+            {
+                alltour = alltour.Where(x => difficulty == (x.Difficulty));
+            }
+            if (rating != 0)
+            {
+                alltour = alltour.Where(x => rating == (x.Rate));
+            }
+            if (age.Length > 0)
+            {
+                alltour = alltour.Where(x => age.Contains(x.PassangerAge));
+            }
+            if (destiantions.Length > 0)
+            {
+                alltour = alltour.Where(x => destiantions.Contains(x.DestinationId));
+            }
+            List<Tour> tours = alltour.ToList();
+            ViewBag.Categories = _context.Categories.ToList();
+            ViewBag.Destination = _context.Destiantions.Include(x => x.Tours).ToList();
+            ViewBag.Tours = _context.Tours.ToList();
+            ViewBag.Slider = _context.Sliders.ToList();
+            return View(tours);
+        }
+
+
+
 
         public IActionResult Details(int id)
         {
             if (id == 0) return NotFound();
             IQueryable<Tour> tours = _context.Tours.AsNoTracking().AsQueryable();
             Tour? tour = tours.Include(d => d.TourImages)
-                .Include(d=>d.Category)
-                .Include(d=>d.Destination)
-                .Include(d=>d.PassengerCounts)
-                .Include(d=>d.TourDates)
-                .Include(d=>d.TourImages)
-                .Include(d=>d.Comments).ThenInclude(u=>u.User)
-                .Include(d=>d.Itineraries)
+                .Include(d => d.Category)
+                .Include(d => d.Destination)
+                .Include(d => d.PassengerCounts)
+                .Include(d => d.TourDates)
+                .Include(d => d.TourImages)
+                .Include(d => d.Comments).ThenInclude(u => u.User)
+                .Include(d => d.Itineraries)
                                      .AsSingleQuery().FirstOrDefault(d => d.Id == id);
 
             ViewBag.Comment = _context.Comments.ToList();
-			ViewBag.Relateds = RelatedTours(tours, tour, id);
-
-
-
+            ViewBag.Relateds = RelatedTours(tours, tour, id);
             if (tour is null) return NotFound();
             return View(tour);
         }
+
+
 
 
         public async Task<IActionResult> AddComment(int id, Comment newComment)
@@ -112,8 +166,8 @@ namespace Alps_Hiking.Controllers
                 TimeStamp = DateTime.Now,
                 TourId = tour.Id,
                 Tour = tour,
-                Rating=newComment.Rating
-                
+                Rating = newComment.Rating
+
             };
 
             _context.Comments.Add(comment);
@@ -187,5 +241,56 @@ namespace Alps_Hiking.Controllers
         }
 
 
+        [HttpPost]
+        public async Task<IActionResult> Details(int id, int count, int dateid)
+        {
+            if (id == 0) return NotFound();
+
+            IQueryable<Tour> tours = _context.Tours.AsNoTracking().AsQueryable();
+            Tour? tour = tours.Include(d => d.TourImages)
+          .Include(d => d.Category)
+          .Include(d => d.Destination)
+          .Include(d => d.PassengerCounts)
+          .Include(d => d.TourDates)
+          .Include(d => d.TourImages)
+          .Include(d => d.Comments).ThenInclude(u => u.User)
+          .Include(d => d.Itineraries)
+                               .AsSingleQuery().FirstOrDefault(d => d.Id == id);
+            if (User.Identity.IsAuthenticated == false)
+                return RedirectToAction("login", "account");
+
+            if (User.Identity.IsAuthenticated)
+            {
+
+                User user = await _userManager.FindByNameAsync(User.Identity.Name);
+                BasketItem basketItem = _context.BasketItems.FirstOrDefault(b => b.TourDateId == dateid && b.UserId == user.Id);
+                if (basketItem == null)
+                {
+                    basketItem = new BasketItem()
+                    {
+                        UserId = user.Id,
+                        TourDateId = dateid,
+                        Count = count
+                    };
+                    _context.BasketItems.Add(basketItem);
+                }
+                else
+                {
+                    basketItem.Count+=count;
+                }
+                _context.SaveChanges();
+
+
+                ViewBag.Comment = _context.Comments.ToList();
+                ViewBag.Relateds = RelatedTours(tours, tour, id);
+                return Redirect(Request.Headers["Referer"].ToString());
+            }
+            ViewBag.Comment = _context.Comments.ToList();
+            ViewBag.Relateds = RelatedTours(tours, tour, id);
+            return Redirect(Request.Headers["Referer"].ToString());
+        }
     }
 }
+
+
+

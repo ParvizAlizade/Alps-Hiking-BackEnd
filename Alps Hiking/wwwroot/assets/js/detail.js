@@ -18,7 +18,6 @@ $('.slider-for').slick({
   });
 
 
-
   const items = document.querySelectorAll('.accordion button');
 
   function toggleAccordion() {
@@ -33,4 +32,6 @@ $('.slider-for').slick({
     }
   }
   
-  items.forEach((item) => item.addEventListener('click', toggleAccordion));
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+

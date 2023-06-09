@@ -150,6 +150,9 @@
 
     </section>
 
+    <style>
+
+    </style>
 
     <section id="PopularTours">
         <div class="container">
@@ -158,10 +161,10 @@
                     <h1> Best Value Tours</h1>
                 </div>
                 <div class="tours d-flex ">
-                    <div class="row">
+                    <div class="row ">
                         @foreach (Tour item in Model.Tours)
                         {
-                            <div class="col-lg-3 col-md-6">
+                            <div  class="col-lg-3 col-md-6">
                                 <div class="card">
                                     <img height="260px" style="object-fit:cover" class='tokenImage'
                                          src="~/assets/images/toursphotos/@item.TourImages.FirstOrDefault(ti=>ti.IsMain==true)?.Path"
@@ -215,9 +218,9 @@
             <div class="buttonn">
                 <button type="button" class="btn btn-primary"><a style="color:white;text-decoration:none" asp-action="Index" asp-controller="Tour">View All Tours</a></button>
             </div>
+            </div>
     </section>
-
-
+    
     <section id="video">
         <div class="videoo">
             <video controls autoplay muted loop type="video/mp4"
@@ -269,7 +272,7 @@
             <div class="line"></div>
         </div>
         <div class="allreviews ">
-           @foreach (Comment item in Model.Comments)
+           @foreach (Comment item in Model.Comments.Where(x=>x.Rating>=4))
             {
                 <div style="height:65vh" class="review d-flex align-items-center">
                     <div>
@@ -278,7 +281,7 @@
                                 @item.Tour.Name
                             </h5>
                             <div class="ratingg text-warning">
-                                @if (item.Rating == 0)
+                                @if (item.Rating == 0)  
                                 {
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
@@ -286,7 +289,7 @@
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 }
-                                @if (item.Rating > 0 && item.Rating < 2)
+                                @if (item.Rating > 0 && item.Rating < 1)
                                 {
                                     <i class="fa-regular fa-star-half-stroke"></i>
                                     <i class="fa-regular fa-star"></i>
@@ -294,67 +297,66 @@
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
 
+                                }
+                                @if (item.Rating == 1)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                }
+                                @if (item.Rating > 1 && item.Rating < 1)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
                                 }
                                 @if (item.Rating == 2)
                                 {
                                     <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
 
                                 }
-                                @if (item.Rating > 2 && item.Rating < 4)
+                                @if (item.Rating > 2 && item.Rating < 3)
                                 {
+                                    <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star-half-stroke"></i>
                                     <i class="fa-regular fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
+                                }
+                                @if (item.Rating == 3)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                }
+                                @if (item.Rating > 3 && item.Rating < 4)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
                                     <i class="fa-regular fa-star"></i>
                                 }
                                 @if (item.Rating == 4)
                                 {
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-
-                                }
-                                @if (item.Rating > 4 && item.Rating < 6)
-                                {
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star-half-stroke"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                }
-                                @if (item.Rating == 6)
-                                {
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                }
-
-                                @if (item.Rating > 6 && item.Rating < 8)
-                                {
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star-half-stroke"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                }
-                                @if (item.Rating == 8)
-                                {
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star"></i>
                                 }
-                                @if (item.Rating > 8 && item.Rating < 10)
+                                @if (item.Rating > 4 && item.Rating < 5)
                                 {
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -362,7 +364,7 @@
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-regular fa-star-half-stroke"></i>
                                 }
-                                @if (item.Rating == 10)
+                                @if (item.Rating == 5)
                                 {
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -372,9 +374,7 @@
                                 }
                             </div>
                             <br>
-                            <span>
-                                @(item.Text.Substring(0, Math.Min(item.Text.Length, 200)) + (item.Text.Length > 100 ? "..." : ""))
-                            </span>
+                            <div style="height:26vh"><span>@(item.Text.Substring(0, Math.Min(item.Text.Length, 200)) + (item.Text.Length > 100 ? "..." : ""))</span></div>
                         </div>
                         <div class="userdetails">
                             <div class="name">
@@ -416,7 +416,6 @@
                     <div class="title"><span>Our Partners</span></div>
                     <div class="line"></div>
                 </div>
-
                 <div class="allpartner d-flex flex-wrap mt-4">
                    @foreach (Partner item in Model.Partners)
                     {

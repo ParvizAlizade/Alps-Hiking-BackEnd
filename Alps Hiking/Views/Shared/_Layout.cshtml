@@ -1,5 +1,8 @@
 ﻿@inject Alps_Hiking.Services.LayoutService layoutservice
-
+@{
+    BasketVM baskets = layoutservice.GetBaskets();
+    List<Tour> tours = layoutservice.GetTours();
+}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,13 +65,14 @@
                             @if (User.Identity.IsAuthenticated)
                             {
                                 @if (User.IsInRole("Admin"))
-                                {
-                                    <a style="text-decoration:none;padding-right:11px;padding-left:11px" asp-controller="Admin" asp-action="Index">Admin Panel</a>
+                                {<i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                    <a style="text-decoration:none;padding-right:11px;padding-left:5px" asp-controller="Category" asp-area="AlpAdmin" asp-action="Index">Admin Panel</a>
                                     <a style="text-decoration:none" asp-controller="Account" asp-action="LogOut">Log out</a>
 
                                 }
                                 else
                                 {
+                                    <i class="fa-solid me-1 fa-user"></i>
                                 <a>@User.Identity.Name</a>
                             <i class="fa-solid fa-right-from-bracket"></i>
                             <a style="text-decoration:none" asp-controller="Account" asp-action="LogOut">Log out</a>    
@@ -140,77 +144,28 @@
             </div>
 
             <div class="items">
-                <div class="item">
-                    <div class="image">
-                        <img src="~/assets/images/toursphotos/1f32b7f3-04e6-4a37-836b-817620cb5565.jpg" alt="">
+              @foreach (var item in baskets.BasketItem)
+                {
+                    Tour tour = tours.FirstOrDefault(x => x.Id == item.TourDate.TourId);
+                    <div class="item">
+                        <div class="image">
+                            <img src="~/assets/images/toursphotos/@tour.TourImages.FirstOrDefault(t=>t.IsMain==true)?.Path" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="about"><span class="count">@item.Count x</span> <h6 class="name">@tour.Name</h6></div>
+                            <br><h5>$@tour.Price</h5>
+                        </div>
+                        <div class="trash">
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
                     </div>
-                    <div class="desc">
-                        <div class="about"><span class="count">5 x</span> <h6 class="name">Montenegro Hiking-Via Dinarica</h6></div>
-                        <br><h5>$890.90</h5>
-                    </div>
-                    <div class="trash">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
-                <hr>
-                <div class="item">
-                    <div class="image">
-                        <img src="~/assets/images/toursphotos/1f32b7f3-04e6-4a37-836b-817620cb5565.jpg" alt="">
-                    </div>
-                    <div class="desc">
-                        <div class="about"><span class="count">5 x</span> <h6 class="name">Montenegro Hiking-Via Dinarica</h6></div>
-                        <br><h5>$890.90</h5>
-                    </div>
-                    <div class="trash">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
-                <hr>
-                <div class="item">
-                    <div class="image">
-                        <img src="~/assets/images/toursphotos/1f32b7f3-04e6-4a37-836b-817620cb5565.jpg" alt="">
-                    </div>
-                    <div class="desc">
-                        <div class="about"><span class="count">5 x</span> <h6 class="name">Montenegro Hiking-Via Dinarica</h6></div>
-                        <br><h5>$890.90</h5>
-                    </div>
-                    <div class="trash">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
-                <hr>
-                <div class="item">
-                    <div class="image">
-                        <img src="~/assets/images/toursphotos/1f32b7f3-04e6-4a37-836b-817620cb5565.jpg" alt="">
-                    </div>
-                    <div class="desc">
-                        <div class="about"><span class="count">5 x</span> <h6 class="name">Montenegro Hiking-Via Dinarica</h6></div>
-                        <br><h5>$890.90</h5>
-                    </div>
-                    <div class="trash">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
-                <hr>
-
-                <div class="item">
-                    <div class="image">
-                        <img src="~/assets/images/toursphotos/1f32b7f3-04e6-4a37-836b-817620cb5565.jpg" alt="">
-                    </div>
-                    <div class="desc">
-                        <div class="about"><span class="count">5 x</span> <h6 class="name">Montenegro Hiking-Via Dinarica</h6></div>
-                        <br><h5>$890.90</h5>
-                    </div>
-                    <div class="trash">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </div>
-                <hr>
+                    <hr>
+                }
             </div>
 
             <div class="subtotal">
                 <h4>Subtotal</h4>
-                <h6 id="subtotal">$340</h6>
+                <h6 id="subtotal">$@baskets.TotalPrice</h6>
             </div>
 
             <div class="button">
@@ -301,7 +256,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="bottomfooter">
                 <span>COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</span>
             </div>

@@ -4,7 +4,7 @@
     {
         public string Text { get; set; }
         public DateTime TimeStamp { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public User User { get; set; }
         public int TourId { get; set; }
         public Tour Tour { get; set; }

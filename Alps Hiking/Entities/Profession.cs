@@ -4,5 +4,9 @@
     {
         public string Name { get; set;}
         public List<Team> Teams  { get; set; }
+        public Profession()
+        {
+            Teams = new List<Team>();
+        }
     }
 }

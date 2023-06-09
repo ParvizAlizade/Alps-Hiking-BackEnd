@@ -82,6 +82,7 @@ namespace Alps_Hiking.Controllers
         }
 
 
+
         public async Task<IActionResult> VerifyEmail(string email, string token)
         {
             User user = await _userManager.FindByEmailAsync(email);
@@ -105,6 +106,7 @@ namespace Alps_Hiking.Controllers
         //}
 
 
+
         public IActionResult Login()
         {
             return View();
@@ -113,8 +115,8 @@ namespace Alps_Hiking.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM account)
         {
-
-            if (!ModelState.IsValid) return View();
+            if (!ModelState.IsValid)
+                return View();
 
             User user = await _userManager.FindByNameAsync(account.Username);
             if (user is null)
@@ -122,10 +124,14 @@ namespace Alps_Hiking.Controllers
                 ModelState.AddModelError("", "Username or password is incorrect");
                 return View();
             }
+            if (user.EmailConfirmed == false)
+            {
+                return Redirect(Request.Headers["Referer"].ToString());
+            }
 
             var userRoles = await _userManager.GetRolesAsync(user);
 
-            if (userRoles.Contains(Roles.Member.ToString()))
+            if (userRoles.Contains(Roles.Member.ToString()) || userRoles.Contains(Roles.Admin.ToString()))
             {
                 Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(user, account.Password, account.RememberMe, true);
 
@@ -138,10 +144,12 @@ namespace Alps_Hiking.Controllers
                     ModelState.AddModelError("", "Username or password is incorrect");
                     return Redirect(Request.Headers["Referer"].ToString());
                 }
-                TempData["Login"] = true;
+            
             }
+
             return RedirectToAction("Index", "Home");
         }
+
 
 
         public async Task<IActionResult> Logout()
@@ -149,5 +157,7 @@ namespace Alps_Hiking.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+
+
     }
 }

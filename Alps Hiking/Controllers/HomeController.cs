@@ -29,7 +29,6 @@ namespace Alps_Hiking.Controllers
                        .Include(t=>t.TourImages)
                          .Include(t=>t.Itineraries)
                          .Include(t=>t.Comments)
-
                            .Include(t=>t.PassengerCounts)
                              .Include(t=>t.Destination)
                                 .OrderBy(t => t.Price)

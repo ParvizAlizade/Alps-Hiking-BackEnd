@@ -36,11 +36,11 @@
                             <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="ConfirmPassword"></span>
                         </div>
                         <div class="mb-3 form-check">
-                            <input asp-for="Terms" type="checkbox" class="form-check-input checkbox" id="exampleCheck1">
+                            <input asp-for="Terms"  class="form-check-input checkbox" id="exampleCheck1" required>
                             <label class="form-check-label" for="exampleCheck1">
                                 I agree to Terms and Cookie Policy
                             </label>
-                            <span style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="Terms"></span>
+                            <p style="color:red ;font-size:15px;font-weight:600;letter-spacing:1px;background-color:black;text-align:center;" asp-validation-for="Terms"></p>
 
                         </div>
                         <button type="submit" class="btn">Sign in</button>

@@ -22,6 +22,33 @@ namespace Alps_Hiking.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Alps_Hiking.Entities.BasketItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TourDateId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TourDateId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("BasketItems");
+                });
+
             modelBuilder.Entity("Alps_Hiking.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -60,17 +87,15 @@ namespace Alps_Hiking.Migrations
                     b.Property<int>("TourId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId1")
+                    b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("TourId");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Comments");
                 });
@@ -119,6 +144,82 @@ namespace Alps_Hiking.Migrations
                     b.HasIndex("TourId");
 
                     b.ToTable("Itineraries");
+                });
+
+            modelBuilder.Entity("Alps_Hiking.Entities.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Number")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("Alps_Hiking.Entities.OrderItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SaleQuantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TourDateId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("TourDateId");
+
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("Alps_Hiking.Entities.Partner", b =>
@@ -336,6 +437,9 @@ namespace Alps_Hiking.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("MaxPassengerCount")
+                        .HasColumnType("int");
 
                     b.Property<string>("TourDates")
                         .IsRequired()
@@ -577,6 +681,25 @@ namespace Alps_Hiking.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Alps_Hiking.Entities.BasketItem", b =>
+                {
+                    b.HasOne("Alps_Hiking.Entities.TourDate", "TourDate")
+                        .WithMany()
+                        .HasForeignKey("TourDateId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Alps_Hiking.Entities.User", "User")
+                        .WithMany("BasketItem")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TourDate");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Alps_Hiking.Entities.Comment", b =>
                 {
                     b.HasOne("Alps_Hiking.Entities.Tour", "Tour")
@@ -587,7 +710,9 @@ namespace Alps_Hiking.Migrations
 
                     b.HasOne("Alps_Hiking.Entities.User", "User")
                         .WithMany("Comments")
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Tour");
 
@@ -603,6 +728,36 @@ namespace Alps_Hiking.Migrations
                         .IsRequired();
 
                     b.Navigation("Tour");
+                });
+
+            modelBuilder.Entity("Alps_Hiking.Entities.Order", b =>
+                {
+                    b.HasOne("Alps_Hiking.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Alps_Hiking.Entities.OrderItem", b =>
+                {
+                    b.HasOne("Alps_Hiking.Entities.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Alps_Hiking.Entities.TourDate", "TourDate")
+                        .WithMany()
+                        .HasForeignKey("TourDateId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("TourDate");
                 });
 
             modelBuilder.Entity("Alps_Hiking.Entities.PassengerCount", b =>
@@ -729,6 +884,11 @@ namespace Alps_Hiking.Migrations
                     b.Navigation("Tours");
                 });
 
+            modelBuilder.Entity("Alps_Hiking.Entities.Order", b =>
+                {
+                    b.Navigation("OrderItems");
+                });
+
             modelBuilder.Entity("Alps_Hiking.Entities.Profession", b =>
                 {
                     b.Navigation("Teams");
@@ -749,6 +909,8 @@ namespace Alps_Hiking.Migrations
 
             modelBuilder.Entity("Alps_Hiking.Entities.User", b =>
                 {
+                    b.Navigation("BasketItem");
+
                     b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618

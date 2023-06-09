@@ -603,7 +603,7 @@ header .basket-menu .closebutton button {
 }
 @media screen and (max-width: 391px) {
   #PopularTours .col-lg-3 {
-    width: 51%;
+    width: 70% !important;
   }
 }
 #PopularTours .col-lg-3 .card {

@@ -1,0 +1,87 @@
+﻿@inject Alps_Hiking.Services.LayoutService layoutservice
+@{
+    BasketVM basket = layoutservice.GetBaskets();
+    List<Tour> tours = layoutservice.GetTours();
+}
+@model OrderVM
+
+
+
+<form  asp-action="Index" method="post">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input asp-for="Fullname" class="form-control" >
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label>User Name</label>
+                <input asp-for="Username" class="form-control">
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <label>Address</label>
+            <input asp-for="Adress" class="form-control" >
+        </div>
+        <div class="col-lg-4">
+            <label>Number</label>
+            <input asp-for="Number" class="form-control" >
+        </div>
+        <div class="col-lg-4">
+            <label>Email</label>
+            <input asp-for="Email" class="form-control">
+        </div>
+    </div>
+
+    <div class=" checkout-right">
+        <h4>YOUR ORDER</h4>
+        <ul>
+            @foreach (var item in basket.BasketItem)
+            {
+                Tour tour = tours.FirstOrDefault(x => x.Id == item.TourDate.TourId);
+                <li>
+                    <div class="product-image">
+                        <img src="~/assets//images/toursphotos/@tour.TourImages.First()"
+                             alt="">
+                    </div>
+                    <div class="product-name">
+                        <p>@tour.Name</p>
+                    </div>
+                    <div class="product-count">@item.Count</div>
+                    <div class="product-price">
+                        <span>@tour.DiscountPrice</span>
+                    </div>
+                </li>
+            }
+
+            @foreach (var item in Model.BasketItems)
+            {
+                <input type="hidden" name="BasketItems[@Model.BasketItems.IndexOf(item)].TourDateId" value="@item.TourDateId" />
+                <input type="hidden" name="BasketItems[@Model.BasketItems.IndexOf(item)].Count" value="@item.Count" />
+            }
+
+        </ul>
+
+        <div class="checkout-footer">
+            <div class="line"></div>
+            <div class="order-details">
+                <div class="order-detail-amount">
+                    <p>Subtotal:</p>
+                    <span class="product-price">@basket.TotalPrice ₼</span>
+                </div>
+                <div class="order-detail-amount">
+                    <p>Total:</p>
+                    <span class="product-price">@basket.TotalPrice ₼</span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <button type="submit">place order</button>
+
+
+</form>

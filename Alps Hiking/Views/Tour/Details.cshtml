@@ -1,8 +1,9 @@
-﻿
-@model Tour
+﻿@model Tour
 @{
     ViewData["Title"] = "Detail Page";
     List<Tour> related = ViewBag.Relateds;
+    List<Comment> comment = ViewBag.Comment;
+
 }
 
 
@@ -169,7 +170,20 @@
                             <span>@Model.Name</span>
                         </div>
                         <div class="reviews">
-                            @if (Model.Rate==0)
+                            @{
+                                double totalrating = 0;
+                                double countrating = 0;
+                            }
+                            @foreach (Comment item in Model.Comments)
+                            {
+                                totalrating += item.Rating;
+                                countrating++;
+                            }
+
+                            @{
+                                double averageRating = (double)totalrating / countrating;
+                            }
+                            @if (averageRating == 0)
                             {
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
@@ -177,7 +191,7 @@
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                             }
-                            @if (Model.Rate>0 && Model.Rate<2)
+                            @if (averageRating > 0 && averageRating < 1)
                             {
                                 <i class="fa-regular fa-star-half-stroke"></i>
                                 <i class="fa-regular fa-star"></i>
@@ -186,7 +200,7 @@
                                 <i class="fa-regular fa-star"></i>
 
                             }
-                              @if (Model.Rate==2)
+                            @if (averageRating == 1)
                             {
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
@@ -195,7 +209,7 @@
                                 <i class="fa-regular fa-star"></i>
 
                             }
-                            @if (Model.Rate > 2 && Model.Rate < 4)
+                            @if (averageRating > 1 && averageRating < 2)
                             {
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star-half-stroke"></i>
@@ -203,7 +217,7 @@
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                             }
-                            @if (Model.Rate ==4)
+                            @if (averageRating == 2)
                             {
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -212,7 +226,7 @@
                                 <i class="fa-regular fa-star"></i>
 
                             }
-                            @if (Model.Rate > 4 && Model.Rate < 6)
+                            @if (averageRating > 2 && averageRating < 3)
                             {
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -220,7 +234,7 @@
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                             }
-                            @if (Model.Rate ==6)
+                            @if (averageRating == 3)
                             {
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -229,7 +243,7 @@
                                 <i class="fa-regular fa-star"></i>
                             }
 
-                            @if (Model.Rate >6 && Model.Rate<8)
+                            @if (averageRating > 3 && averageRating < 4)
                             {
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -237,7 +251,7 @@
                                 <i class="fa-regular fa-star-half-stroke"></i>
                                 <i class="fa-regular fa-star"></i>
                             }
-                            @if (Model.Rate == 8)
+                            @if (averageRating == 4)
                             {
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -245,7 +259,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                             }
-                            @if (Model.Rate > 8 && Model.Rate < 10)
+                            @if (averageRating > 4 && averageRating < 5)
                             {
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -253,7 +267,7 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star-half-stroke"></i>
                             }
-                            @if (Model.Rate ==10)
+                            @if (averageRating == 5)
                             {
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -261,8 +275,8 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             }
-
-                            <span>(3 Reviews)</span>
+                            <span style="font-weight:600">@averageRating</span>
+                            <span>(@Model.Comments.Count Reviews)</span>
                         </div>
                         <div class="detail">
                             <div class="days">
@@ -336,10 +350,10 @@
                                 <div class="slider-nav">
                                     @foreach (TourImage item in Model.TourImages.Where(ti => ti.IsMain == false))
                                     {
-                                        <img style="height:180px"  src="~/assets/images/toursphotos/@item.Path"
+                                        <img style="height:180px" src="~/assets/images/toursphotos/@item.Path"
                                              alt="">
                                     }
-                                </div> 
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -363,7 +377,7 @@
                                              aria-labelledby="flush-heading-@item.Day_count" data-bs-parent="#accordionFlushExample">
                                             <div class="accordion-body">
                                                 <p>
-                                                   @item.Day
+                                                    @item.Day
                                                 </p>
                                             </div>
                                         </div>
@@ -377,12 +391,12 @@
                                 <i class="fa-solid fa-map"></i>
                                 <h3>Map</h3>
                             </div>
-                          @Html.Raw(Model.Map)
+                            @Html.Raw(Model.Map)
                         </div>
                         <hr>
 
 
-                     
+
 
 
                         <div id="comment">
@@ -396,16 +410,15 @@
                                     Tour Reviews
                                 </div>
 
-
                                 <div class="card-body">
-                                                @{
-                                                    int count = 0;
-                                                }
-                                    @foreach (Comment cmt in Model.Comments)
+                                    @{
+                                        int count = 0;
+                                    }
+                                    @foreach (Comment cmt in Model.Comments.OrderByDescending(x => x.TimeStamp))
                                     {
                                         if (cmt.TourId == Model.Id)
                                         {
-                                        <div class="comment">
+                                            <div class="comment">
                                                 <div style="display:none">
                                                     @(count++)
                                                 </div>
@@ -414,17 +427,19 @@
                                                     <div style="display:flex;justify-content:space-between">
                                                         <h5>@cmt.User.Fullname</h5>
                                                         <div class="d-flex justify-content-between">
-                                                            <button id="edit-button-@count" class=" btn  btn-primary me-2" data-comment-id="@cmt.Id" data-comment-text="@cmt.Text">
+                                                            <button class=" btn editbutton btn-primary me-2" data-comment-id="@cmt.Id" data-comment-text="@cmt.Text">
                                                                 Edit
                                                             </button>
+
                                                             <form method="post" action="/Tour/DeleteComment" class="deleteArea">
-                                                                <button type="submit" name="commentId" value="@cmt.Id" class="delete btn btn-danger">
-                                                                    Delete
-                                                                </button>
-                                                            </form>
+
+                                                            <button type="submit" name="commentId" value="@cmt.Id" class="delete btn btn-danger">
+                                                                Delete
+                                                            </button>
+                                                               </form>
                                                         </div>
                                                     </div>
-                                                    <form id="edit-comment-@count" class="d-none" asp-controller="Tour" asp-action="UpdateComment" asp-route-commentId="@cmt.Id" method="post">
+                                                    <form class="d-none" asp-controller="Tour" asp-action="UpdateComment" asp-route-commentId="@cmt.Id" method="post">
                                                         <div class="form-group">
                                                             <textarea class="form-control mt-2" name="Text" rows="3">@cmt.Text</textarea>
                                                         </div>
@@ -432,18 +447,22 @@
                                                     </form>
                                                 }
 
+
+
                                                 @{
-                                                    var defaultStars = 5-cmt.Rating;
+                                                    var defaultStars = 5 - cmt.Rating;
                                                 }
 
+
                                                 <p>@cmt.Text</p>
-                                                <small class="text-muted">Posted on <b>@cmt.TimeStamp</b>
+                                                <small class="text-muted">
+                                                    Posted on <b>@cmt.TimeStamp</b>
                                                     <div class="text-warning mt-3">
 
-                                                       @for (int i = 1; i <=cmt.Rating; i++)
+                                                        @for (int i = 1; i <= cmt.Rating; i++)
                                                         {
                                                             <i class=" fas fa-star"></i>
- 
+
                                                         }
 
                                                         @for (int i = 1; i <= defaultStars; i++)
@@ -454,10 +473,10 @@
                                                     </div>
                                                 </small>
                                                 <hr>
-                                        </div>
+                                            </div>
                                         }
                                     }
-                       
+
 
                                     @if (User.Identity.IsAuthenticated)
                                     {
@@ -473,7 +492,7 @@
                                                 </div>
                                                 <input type="hidden" name="Rating" id="ratingsValue" value="1">
                                             </div>
-                                                <textarea class="form-control" placeholder="Write Your Comment here" name="Text" rows="3"></textarea>
+                                            <textarea class="form-control" placeholder="Write Your Comment here" name="Text" rows="3"></textarea>
                                             <br>
                                             <button type="submit" class="btn btn-success">Leave a Review</button>
                                         </form>
@@ -495,7 +514,7 @@
                                 <h2>Related Tours</h2>
                             </div>
                             <div class="allcards">
-                               @foreach (var item in related)
+                                @foreach (var item in related)
                                 {
                                     <div class="col-lg-6 col-md-6 relatedtours">
                                         <div class="tour-card">
@@ -531,19 +550,17 @@
                                         </div>
                                     </div>
                                 }
-                                <div id="loadmore">
-                                    <button class="btn text-center btn-dark mt-5" id="loadmorebutton">Load More</button>
-                                </div>
                             </div>
+                                <div style="text-align:center" id="loadmore">
+                                    <button style="padding:15px 30px;text-align:center" class="btn text-center btn-dark mt-5" id="loadmorebutton">Load More</button>
+                                </div>
                         </div>
                         <hr>
                     </div>
                 </div>
 
-
-
                 <div class="rightside col-lg-4">
-                    <div class="allsec">
+                    <div class="allsec ms-3">
                         <div class="booking">
                             <h3>Hot Trip</h3>
                             <div class="priceside">
@@ -555,33 +572,38 @@
 
                             <div class="bookingform">
                                 <span id="title">Booking Form</span>
-                                <div class="day">
-                                    <i class="fa-regular fa-calendar"></i>
-                                    <select style="padding: 10px 20px; border-color: rgb(207, 207, 207);" name="" id="dateselect">
-                                        <option value="">2023-02-15</option>
-                                        <option value="">2023-02-22</option>
-                                        <option value="">2023-02-29</option>
-                                    </select>
-                                </div>
+                               <form asp-controller="tour" asp-action="details" asp-route-id="@Model.Id">
+                                    <div class="day">
+                                        <i class="fa-regular fa-calendar"></i>
+                                        <select name="dateid" style="padding: 10px 20px; border-color: rgb(207, 207, 207);" name="" id="dateselect">
+                                            @foreach (TourDate item in Model.TourDates)
+                                            {
+                                                <option value="@item.Id">@item.TourDates</option>
+                                            }
+                                        
+                                        </select>
+                                    </div>
 
-                                <div class="people">
-                                    <i class="fa-solid fa-users"></i>
-                                    <select name="" id="">
-                                        <option selected value="">Count</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                        <option value="">4</option>
-                                        <option value="">5</option>
-                                        <option value="">6</option>
-                                        <option value="">7</option>
-                                    </select>
-                                </div>
+                                    <div class="people">
+                                        <i class="fa-solid fa-users"></i>
+                                        <select name="count" id="">
+                                            <option selected value="">Count</option>
+                                            <option  value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                    </div>
+                                    <div class="proceed">
+                                        <i class="fa-solid fa-bolt"></i>
+                                        <button class="btn btn-primary">Proceed Booking</button>
+                                    </div>
+                               </form>
 
-                                <div class="proceed">
-                                    <i class="fa-solid fa-bolt"></i>
-                                    <button class="btn btn-primary">Proceed Booking</button>
-                                </div>
+                                
 
                                 <div class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
@@ -616,15 +638,15 @@
                         </div>
                     </div>
                 </div>
-                </div>
-                </div>
+            </div>
+        </div>
 
-                        
+
     </section>
 </main>
 <style>
-    .relatedtours,.comment{
-        display:none;
+    .relatedtours, .comment {
+        display: none;
     }
 </style>
 <script>
@@ -632,7 +654,7 @@
     document.addEventListener("DOMContentLoaded", function (event) {
         $(".relatedtours").slice(0, 4).show();
         $("#loadmorebutton").on("click", function (e) {
-                e.preventDefault();
+            e.preventDefault();
             $(".relatedtours:hidden").slice(0, 2).slideDown();
         });
 
@@ -642,21 +664,30 @@
             $(".comment:hidden").slice(0, 3).slideDown();
         });
 
-        $(".ratingStar").hover(function (){
+        $(".ratingStar").hover(function () {
             $(".ratingStar").addClass("far").removeClass("fas");
             $(this).addClass("fas").removeClass("far");
             $(this).prevAll(".ratingStar").addClass("fas").removeClass("far");
         });
 
-        $(".ratingStar").click(function(){
-           var starValue= $(this).attr("data-value");
-           $("#ratingsValue").val(starValue);   
+        $(".ratingStar").click(function () {
+            var starValue = $(this).attr("data-value");
+            $("#ratingsValue").val(starValue);
         })
 
-        document.getElementById("edit-button-@count").addEventListener("click", function () {
-        document.getElementById("edit-comment-@count").classList.toggle("d-none");
+
+        let editbutton = document.querySelectorAll(".editbutton")
+        editbutton.forEach(Edit => {
+            Edit.addEventListener("click", function () {
+                let textarea = Edit.parentElement.parentElement.nextElementSibling;
+                textarea.classList.toggle("d-none");
+            })
+        });
+
     });
-    });
+
+
+
 </script>
 
 @section Scripts {

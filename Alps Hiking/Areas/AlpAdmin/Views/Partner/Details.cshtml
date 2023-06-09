@@ -1,0 +1,21 @@
+﻿@model Alps_Hiking.Entities.Partner
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Partner</h4>
+    <hr />
+    <dl style="background-color:blanchedalmond" class="row">
+        <td class="col-sm-12">
+            <img style="width:150px;height:150px;object-fit:contain;border-radius:0%" src="~/assets/images/partners/@Model.ImagePath" />
+        </td>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
