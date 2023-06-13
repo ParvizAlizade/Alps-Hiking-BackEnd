@@ -42,7 +42,11 @@
                             </div>
                         </div>
                     }
-                        <p id="not_found"></p>
+
+                    <div class="text-center" id="loadmore">
+                        <button style="width:20%;padding:10px 10px" class="btn text-center btn-dark mt-5" id="loadmorebutton">Load More</button>
+                    </div>
+                        <p class="d-none" id="not_found"></p>
                     </div>
                 </div>
             </div>
@@ -52,3 +56,18 @@
 @section Scripts {
     <script src="~/assets/js/destination.js"></script>
 }
+<style>
+    .hedd, .comment {
+        display: none;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        $(".hedd").slice(0, 15).show();
+        $("#loadmorebutton").on("click", function (e) {
+            e.preventDefault();
+            $(".hedd:hidden").slice(0, 6).slideDown();
+        });
+    });
+</script>

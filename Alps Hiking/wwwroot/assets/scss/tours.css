@@ -360,483 +360,640 @@ header .basket-menu .closebutton button {
     display: none;
   }
 }
+@media only screen and (max-width: 392px) {
+    #slider .content h1 {
+        display:none
+    }
+}
+    #allsection {
+        display: flex;
+        padding-bottom: 50px;
+        margin-top: 130px;
+    }
+@media only screen and (max-width: 392px) {
+    #allsection {
+        margin-top:0px
+    }
 
-#allsection {
-  display: flex;
-  padding-bottom: 50px;
-  margin-top: 130px;
-}
-#allsection .tour-search {
-  width: 80%;
-  margin: 0 auto;
-}
-#allsection .tour-search .title {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-}
-#allsection .tour-search .title i {
-  color: #133a67;
-  display: flex;
-  align-items: center;
-  font-size: 21px;
-}
-#allsection .tour-search .title h3 {
-  color: #133a67;
-  margin-left: 10px;
-}
-#allsection .tour-search .keywords h5 {
-  margin-bottom: 25px;
-}
-#allsection .tour-search .keywords form .search {
-  position: relative;
-}
-#allsection .tour-search .keywords form .search .mic {
-  position: absolute;
-  top: 6px;
-  right: 10px;
-  font-size: 25px;
-}
-#allsection .tour-search .category, #allsection .tour-search .duration, #allsection .tour-search .age, #allsection .tour-search .destination {
-  margin-top: 25px;
-  margin-top: 40px;
-}
-#allsection .tour-search .category input, #allsection .tour-search .duration input, #allsection .tour-search .age input, #allsection .tour-search .destination input {
-  width: 17px;
-  height: 15px;
-}
-#allsection .tour-search .category label, #allsection .tour-search .duration label, #allsection .tour-search .age label, #allsection .tour-search .destination label {
-  font-size: 17px;
-  color: rgb(112, 121, 135);
-  margin-left: 5px;
-  margin-top: 10px;
-  letter-spacing: 0.2px;
-}
-#allsection .tour-search .price {
-  margin-top: 40px;
-  display: flex;
-}
-#allsection .tour-search .price input {
-  width: 70%;
-  border: 1px solid gainsboro;
-  border-radius: 3px;
-  margin-top: 10px;
-  padding: 10px;
-}
-#allsection .tour-search .price input:focus {
-  outline: none;
-}
-#allsection .tour-search .rating {
-  margin-top: 50px;
-}
-#allsection .tour-search .rating select {
-  margin-top: 20px;
-  padding: 10px 30px 10px 30px;
-  border-color: rgb(180, 180, 180);
-  border-radius: 5px;
-  font-size: 15px;
-  letter-spacing: 2px;
-}
-#allsection .tour-search .rating select:focus {
-  outline: none;
-}
-#allsection .tour-search .button {
-  padding: 10px;
-  background-color: rgb(35, 64, 118);
-  font-size: 20px;
-}
-#allsection #alltours {
-  align-items: center;
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-}
-#allsection #alltours .buttonn {
-  text-align: center;
-}
-#allsection #alltours .buttonn button {
-  font-size: 15px;
-  font-weight: 700;
-  padding: 16px 37px 21px 37px;
-  text-transform: uppercase;
-  border-radius: 30px;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  background: #193555;
-  box-shadow: none;
-}
-@media only screen and (min-width: 389px) and (max-width: 768.1px) {
-  #allsection #alltours {
-    padding: 0;
-  }
-  #allsection #alltours .difficulty {
-    display: none;
-  }
-}
-@media screen and (max-width: 391px) {
-  #allsection #alltours .col-lg-4 {
-    width: 51%;
-  }
-}
-#allsection #alltours .col-lg-4 .card {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  margin-bottom: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.1333333333);
-  background-color: white;
-  box-shadow: 0 14px 20px 5px rgba(0, 0, 0, 0.5333333333);
-  border-radius: 0.7rem;
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  overflow: hidden;
-  transition: 0.8s all;
-  padding-bottom: 40px;
-}
-@media only screen and (min-width: 389px) and (max-width: 768.1px) {
-  #allsection #alltours .col-lg-4 .card {
-    margin: 2rem auto;
-    padding-bottom: 10px;
-  }
-}
-#allsection #alltours .col-lg-4 .card .title {
-  margin-top: 27px;
-  display: flex;
-  margin-bottom: 15px;
-}
-#allsection #alltours .col-lg-4 .card .title svg {
-  max-width: 22px;
-  vertical-align: middle;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-#allsection #alltours .col-lg-4 .card .title a {
-  text-decoration: none;
-  color: black;
-  font-size: 19px;
-  font-weight: 700;
-}
-#allsection #alltours .col-lg-4 .card .main .description {
-  margin-left: 30px;
-}
-#allsection #alltours .col-lg-4 .card .main .description .duration,
-#allsection #alltours .col-lg-4 .card .main .description .age {
-  margin-bottom: 10px;
-}
-#allsection #alltours .col-lg-4 .card .main .description .duration i,
-#allsection #alltours .col-lg-4 .card .main .description .age i {
-  color: rgb(35, 64, 118);
-}
-#allsection #alltours .col-lg-4 .card .main .description .duration span,
-#allsection #alltours .col-lg-4 .card .main .description .age span {
-  color: rgb(69, 68, 68);
-  margin-left: 8px;
-  font-weight: 500;
-}
-#allsection #alltours .col-lg-4 .card .main .description .difficulty span {
-  color: rgb(69, 68, 68);
-  margin-left: 2px;
-  font-weight: 500;
-}
-#allsection #alltours .col-lg-4 .card .main .priceinfo {
-  margin-right: 30px;
-}
-#allsection #alltours .col-lg-4 .card .main .priceinfo .discountprice del {
-  font-size: 18px;
-  color: rgb(69, 68, 68);
-  font-weight: 500;
-  justify-content: end;
-  display: flex;
-}
-#allsection #alltours .col-lg-4 .card .main .priceinfo .price {
-  display: flex;
-  color: rgb(35, 64, 118);
-  font-weight: 700;
-  font-size: 22px;
-}
-#allsection #alltours .col-lg-4 .card ::before {
-  box-shadow: 0 0 100px 40px rgba(255, 255, 255, 0.031372549);
-  top: -10%;
-  left: -100%;
-  transform: rotate(-45deg);
-  height: 60rem;
-  transition: 0.7s all;
-}
-#allsection #alltours .col-lg-4 .card:hover {
-  border: 1px solid rgba(255, 255, 255, 0.2666666667);
-  box-shadow: 0 17px 50px 10px rgba(0, 0, 0, 0.6666666667);
-  transform: scale(1.015);
-  filter: brightness(1.3);
-}
-#allsection #alltours .col-lg-4 .card:hover .priceinfo .discountprice del {
-  color: rgb(81, 81, 81);
-}
-#allsection #alltours .col-lg-4 .card:hover ::before {
-  filter: brightness(0.5);
-  top: -100%;
-  left: 200%;
-}
-#allsection #alltours .col-lg-4 .card .button {
-  text-align: center;
-  margin-top: 30px;
-}
-#allsection #alltours .col-lg-4 .card .button button {
-  padding: 7px 30px;
-  background-color: rgb(0, 0, 171);
-  font-weight: 500;
-}
-.hedd {
-    display: none;
 }
 
-#loadmore {
-    display: flex;
-    justify-content: center;
+    #allsection .tour-search {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+        #allsection .tour-search .title {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+        }
+
+            #allsection .tour-search .title i {
+                color: #133a67;
+                display: flex;
+                align-items: center;
+                font-size: 21px;
+            }
+
+            #allsection .tour-search .title h3 {
+                color: #133a67;
+                margin-left: 10px;
+            }
+
+        #allsection .tour-search .keywords h5 {
+            margin-bottom: 25px;
+        }
+
+        #allsection .tour-search .keywords form .search {
+            position: relative;
+        }
+
+            #allsection .tour-search .keywords form .search .mic {
+                position: absolute;
+                top: 6px;
+                right: 10px;
+                font-size: 25px;
+            }
+
+        #allsection .tour-search .category, #allsection .tour-search .duration, #allsection .tour-search .age, #allsection .tour-search .destination {
+            margin-top: 25px;
+            margin-top: 40px;
+        }
+
+            #allsection .tour-search .category input, #allsection .tour-search .duration input, #allsection .tour-search .age input, #allsection .tour-search .destination input {
+                width: 17px;
+                height: 15px;
+            }
+
+            #allsection .tour-search .category label, #allsection .tour-search .duration label, #allsection .tour-search .age label, #allsection .tour-search .destination label {
+                font-size: 17px;
+                color: rgb(112, 121, 135);
+                margin-left: 5px;
+                margin-top: 10px;
+                letter-spacing: 0.2px;
+            }
+
+    @media only screen and (min-width: 389px) and (max-width: 768.1px) {
+        #allsection .tour-search .category label, #allsection .tour-search .duration label, #allsection .tour-search .age label, #allsection .tour-search .destination label {
+            font-size: 14px;
+        }
+    }
+
+    #allsection .tour-search .price {
+        margin-top: 40px;
+        display: flex;
+    }
+
+        #allsection .tour-search .price input {
+            width: 70%;
+            border: 1px solid gainsboro;
+            border-radius: 3px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+            #allsection .tour-search .price input:focus {
+                outline: none;
+            }
+
+    #allsection .tour-search .rating {
+        margin-top: 50px;
+    }
+
+        #allsection .tour-search .rating select {
+            margin-top: 20px;
+            padding: 10px 30px 10px 30px;
+            border-color: rgb(180, 180, 180);
+            border-radius: 5px;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+
+            #allsection .tour-search .rating select:focus {
+                outline: none;
+            }
+
+    #allsection .tour-search .button {
+        padding: 10px;
+        background-color: rgb(35, 64, 118);
+        font-size: 20px;
+    }
+
+    #allsection #alltours {
+        align-items: center;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+        #allsection #alltours .buttonn {
+            text-align: center;
+        }
+
+            #allsection #alltours .buttonn button {
+                font-size: 15px;
+                font-weight: 700;
+                padding: 16px 37px 21px 37px;
+                text-transform: uppercase;
+                border-radius: 30px;
+                -moz-border-radius: 30px;
+                -webkit-border-radius: 30px;
+                background: #193555;
+                box-shadow: none;
+            }
+
+    @media only screen and (min-width: 389px) and (max-width: 768.1px) {
+        #allsection #alltours {
+            padding: 0;
+        }
+
+            #allsection #alltours .difficulty {
+                display: none;
+            }
+    }
+
+    @media screen and (max-width: 391px) {
+        #allsection #alltours .col-lg-4 {
+            width: 61%;
+        }
+        #allsection #alltours .row {
+            margin-left: 50px;
+        }
 }
 
-#loadmorebutton {
-    padding: 15px 35px;
-    font-size: 17px;
-    width: 20%;
-    margin: 0 auto;
-}
+    #allsection #alltours .col-lg-4 .card {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        margin-bottom: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.1333333333);
+        background-color: white;
+        box-shadow: 0 14px 20px 5px rgba(0, 0, 0, 0.5333333333);
+        border-radius: 0.7rem;
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        overflow: hidden;
+        transition: 0.8s all;
+        padding-bottom: 40px;
+    }
 
-footer {
-  margin-top: 100px;
-}
-footer .topfooter {
-  background-color: rgb(32, 32, 32);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media only screen and (min-width: 389px) and (max-width: 768.1px) {
-  footer .topfooter .awards h3 {
-    color: white;
-  }
-  footer .topfooter .awards p {
-    color: rgba(204, 204, 204, 0.8);
-    margin-top: 30px;
-    margin-bottom: 36px;
-    font-size: 14px;
-    width: 80%;
-  }
-  footer .topfooter .awards .image {
-    width: 60%;
-  }
-  footer .topfooter .awards .image img {
-    width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  footer .topfooter .contact h3 {
-    color: white;
-    margin-bottom: 30px;
-  }
-  footer .topfooter .contact .infos {
-    width: 80%;
-  }
-  footer .topfooter .contact .infos .content {
-    margin-top: 15px;
-  }
-  footer .topfooter .contact .infos .content i {
-    font-size: 14px;
-    color: white;
-  }
-  footer .topfooter .contact .infos .content span {
-    font-size: 14px;
-    color: white;
-    font-weight: 200;
-  }
-  footer .topfooter .contact .links {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 28px;
-    width: 70%;
-  }
-  footer .topfooter .contact .links i {
-    font-size: 20px;
-  }
-  footer .topfooter .pay {
-    display: flex;
-  }
-  footer .topfooter .pay h3 {
-    color: white;
-    margin-bottom: 30px;
-  }
-  footer .topfooter .pay p {
-    color: white;
-    font-weight: 100;
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  footer .topfooter .pay .images {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-  footer .topfooter .pay .images img {
-    width: 20%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-@media only screen and (max-width: 391px) {
-  footer .topfooter .awards {
-    margin-bottom: 70px;
-  }
-  footer .topfooter .awards h3 {
-    color: white;
-  }
-  footer .topfooter .awards p {
-    color: rgba(204, 204, 204, 0.8);
-    margin-top: 30px;
-    margin-bottom: 36px;
-    font-size: 14px;
-    width: 80%;
-  }
-  footer .topfooter .awards .image {
-    width: 40%;
-  }
-  footer .topfooter .awards .image img {
-    width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  footer .topfooter .contact {
-    margin-bottom: 70px;
-  }
-  footer .topfooter .contact h3 {
-    color: white;
-    margin-bottom: 30px;
-  }
-  footer .topfooter .contact .infos {
-    width: 80%;
-  }
-  footer .topfooter .contact .infos .content {
-    margin-top: 15px;
-  }
-  footer .topfooter .contact .infos .content i {
-    font-size: 14px;
-    color: white;
-  }
-  footer .topfooter .contact .infos .content span {
-    font-size: 14px;
-    color: white;
-    font-weight: 200;
-  }
-  footer .topfooter .contact .links {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 28px;
-    width: 70%;
-  }
-  footer .topfooter .contact .links i {
-    font-size: 20px;
-  }
-  footer .topfooter .pay {
-    display: flex;
-    width: 70%;
-  }
-  footer .topfooter .pay h3 {
-    color: white;
-    margin-bottom: 30px;
-  }
-  footer .topfooter .pay p {
-    color: white;
-    font-weight: 100;
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  footer .topfooter .pay .images {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-  footer .topfooter .pay .images img {
-    width: 20%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-@media only screen and (min-width: 768.1px) {
-  footer .topfooter .awards h3 {
-    color: white;
-  }
-  footer .topfooter .awards p {
-    color: rgba(204, 204, 204, 0.8);
-    margin-top: 30px;
-    margin-bottom: 36px;
-  }
-  footer .topfooter .awards .image {
-    width: 60%;
-  }
-  footer .topfooter .awards .image img {
-    width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  footer .topfooter .col-lg-5 {
-    display: flex;
-    justify-content: center;
-  }
-  footer .topfooter .col-lg-5 .contact h3 {
-    color: white;
-    margin-bottom: 30px;
-  }
-  footer .topfooter .col-lg-5 .contact .infos .content {
-    margin-top: 15px;
-  }
-  footer .topfooter .col-lg-5 .contact .infos .content i {
-    font-size: 17px;
-    color: white;
-  }
-  footer .topfooter .col-lg-5 .contact .infos .content span {
-    color: white;
-    font-weight: 200;
-  }
-  footer .topfooter .col-lg-5 .contact .links {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 28px;
-    width: 70%;
-  }
-  footer .topfooter .col-lg-5 .contact .links i {
-    font-size: 20px;
-  }
-  footer .topfooter .pay {
-    display: flex;
-    justify-content: center;
-  }
-  footer .topfooter .pay h3 {
-    color: white;
-    margin-bottom: 30px;
-  }
-  footer .topfooter .pay p {
-    color: white;
-    font-weight: 100;
-    margin-top: 10px;
-  }
-  footer .topfooter .pay .images {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-  footer .topfooter .pay .images img {
-    width: 20%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
-footer .bottomfooter {
-  text-align: center;
-  padding: 25px 0px;
-  background-color: black;
-}
-footer .bottomfooter span {
-  color: rgb(184, 184, 184);
-  font-size: 15px;
-  letter-spacing: 1px;
-}/*# sourceMappingURL=tours.css.map */
+        #allsection #alltours .col-lg-4 .card img {
+            height: 30vh;
+            object-fit: cover;
+        }
+
+    @media only screen and (min-width: 389px) and (max-width: 768.1px) {
+        #allsection #alltours .col-lg-4 .card img {
+            height: 20vh;
+        }
+    }
+
+    @media only screen and (min-width: 389px) and (max-width: 768.1px) {
+        #allsection #alltours .col-lg-4 .card {
+            margin: 2rem auto;
+            padding-bottom: 10px;
+        }
+    }
+
+    #allsection #alltours .col-lg-4 .card .title {
+        margin-top: 27px;
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+        #allsection #alltours .col-lg-4 .card .title svg {
+            max-width: 22px;
+            vertical-align: middle;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        #allsection #alltours .col-lg-4 .card .title a {
+            text-decoration: none;
+            color: black;
+            font-size: 19px;
+            font-weight: 700;
+        }
+
+    @media only screen and (min-width: 389px) and (max-width: 768.1px) {
+        #allsection #alltours .col-lg-4 .card .title a {
+            font-size: 14px;
+        }
+    }
+
+    #allsection #alltours .col-lg-4 .card .main .description {
+        margin-left: 30px;
+    }
+
+        #allsection #alltours .col-lg-4 .card .main .description .duration,
+        #allsection #alltours .col-lg-4 .card .main .description .age {
+            margin-bottom: 10px;
+        }
+
+            #allsection #alltours .col-lg-4 .card .main .description .duration i,
+            #allsection #alltours .col-lg-4 .card .main .description .age i {
+                color: rgb(35, 64, 118);
+            }
+
+            #allsection #alltours .col-lg-4 .card .main .description .duration span,
+            #allsection #alltours .col-lg-4 .card .main .description .age span {
+                color: rgb(69, 68, 68);
+                margin-left: 8px;
+                font-weight: 500;
+            }
+
+    @media only screen and (min-width: 389px) and (max-width: 768.1px) {
+        #allsection #alltours .col-lg-4 .card .main .description .age span {
+            font-size: 15px;
+        }
+    }
+
+    #allsection #alltours .col-lg-4 .card .main .description .difficulty span {
+        color: rgb(69, 68, 68);
+        margin-left: 2px;
+        font-weight: 500;
+    }
+
+    #allsection #alltours .col-lg-4 .card .main .priceinfo {
+        margin-right: 30px;
+    }
+
+    @media only screen and (min-width: 389px) and (max-width: 768.1px) {
+        #allsection #alltours .col-lg-4 .card .main .priceinfo {
+            margin-right: 10px;
+        }
+    }
+
+    #allsection #alltours .col-lg-4 .card .main .priceinfo .discountprice del {
+        font-size: 18px;
+        color: rgb(69, 68, 68);
+        font-weight: 500;
+        justify-content: end;
+        display: flex;
+    }
+
+    @media only screen and (min-width: 389px) and (max-width: 768.1px) {
+        #allsection #alltours .col-lg-4 .card .main .priceinfo .discountprice del {
+            font-size: 15px;
+        }
+    }
+
+    #allsection #alltours .col-lg-4 .card .main .priceinfo .price {
+        display: flex;
+        color: rgb(35, 64, 118);
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    @media only screen and (min-width: 389px) and (max-width: 768.1px) {
+        #allsection #alltours .col-lg-4 .card .main .priceinfo .price {
+            font-size: 18px;
+        }
+    }
+
+    #allsection #alltours .col-lg-4 .card ::before {
+        box-shadow: 0 0 100px 40px rgba(255, 255, 255, 0.031372549);
+        top: -10%;
+        left: -100%;
+        transform: rotate(-45deg);
+        height: 60rem;
+        transition: 0.7s all;
+    }
+
+    #allsection #alltours .col-lg-4 .card:hover {
+        border: 1px solid rgba(255, 255, 255, 0.2666666667);
+        box-shadow: 0 17px 50px 10px rgba(0, 0, 0, 0.6666666667);
+        transform: scale(1.015);
+        filter: brightness(1.3);
+    }
+
+        #allsection #alltours .col-lg-4 .card:hover .priceinfo .discountprice del {
+            color: rgb(81, 81, 81);
+        }
+
+        #allsection #alltours .col-lg-4 .card:hover ::before {
+            filter: brightness(0.5);
+            top: -100%;
+            left: 200%;
+        }
+
+    #allsection #alltours .col-lg-4 .card .button {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+        #allsection #alltours .col-lg-4 .card .button button {
+            padding: 7px 30px;
+            background-color: rgb(0, 0, 171);
+            font-weight: 500;
+        }
+
+    .hedd {
+        display: none;
+    }
+
+    #loadmore {
+        display: flex;
+        justify-content: center;
+    }
+
+    #loadmorebutton {
+        padding: 15px 35px;
+        font-size: 17px;
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+
+        footer .topfooter {
+            background-color: rgb(32, 32, 32);
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+    @media only screen and (min-width: 389px) and (max-width: 768.1px) {
+        footer .topfooter .awards h3 {
+            color: white;
+        }
+
+        footer .topfooter .awards p {
+            color: rgba(204, 204, 204, 0.8);
+            margin-top: 30px;
+            margin-bottom: 36px;
+            font-size: 14px;
+            width: 80%;
+        }
+
+        footer .topfooter .awards .image {
+            width: 60%;
+        }
+
+            footer .topfooter .awards .image img {
+                width: 100%;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+
+        footer .topfooter .contact h3 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        footer .topfooter .contact .infos {
+            width: 80%;
+        }
+
+            footer .topfooter .contact .infos .content {
+                margin-top: 15px;
+            }
+
+                footer .topfooter .contact .infos .content i {
+                    font-size: 14px;
+                    color: white;
+                }
+
+                footer .topfooter .contact .infos .content span {
+                    font-size: 14px;
+                    color: white;
+                    font-weight: 200;
+                }
+
+        footer .topfooter .contact .links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 28px;
+            width: 70%;
+        }
+
+            footer .topfooter .contact .links i {
+                font-size: 20px;
+            }
+
+        footer .topfooter .pay {
+            display: flex;
+        }
+
+            footer .topfooter .pay h3 {
+                color: white;
+                margin-bottom: 30px;
+            }
+
+            footer .topfooter .pay p {
+                color: white;
+                font-weight: 100;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            footer .topfooter .pay .images {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+
+                footer .topfooter .pay .images img {
+                    width: 20%;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                }
+    }
+
+    @media only screen and (max-width: 391px) {
+        footer .topfooter .awards {
+            margin-bottom: 70px;
+        }
+
+            footer .topfooter .awards h3 {
+                color: white;
+            }
+
+            footer .topfooter .awards p {
+                color: rgba(204, 204, 204, 0.8);
+                margin-top: 30px;
+                margin-bottom: 36px;
+                font-size: 14px;
+                width: 80%;
+            }
+
+            footer .topfooter .awards .image {
+                width: 40%;
+            }
+
+                footer .topfooter .awards .image img {
+                    width: 100%;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                }
+
+        footer .topfooter .contact {
+            margin-bottom: 70px;
+        }
+
+            footer .topfooter .contact h3 {
+                color: white;
+                margin-bottom: 30px;
+            }
+
+            footer .topfooter .contact .infos {
+                width: 80%;
+            }
+
+                footer .topfooter .contact .infos .content {
+                    margin-top: 15px;
+                }
+
+                    footer .topfooter .contact .infos .content i {
+                        font-size: 14px;
+                        color: white;
+                    }
+
+                    footer .topfooter .contact .infos .content span {
+                        font-size: 14px;
+                        color: white;
+                        font-weight: 200;
+                    }
+
+            footer .topfooter .contact .links {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 28px;
+                width: 70%;
+            }
+
+                footer .topfooter .contact .links i {
+                    font-size: 20px;
+                }
+
+        footer .topfooter .pay {
+            display: flex;
+            width: 70%;
+        }
+
+            footer .topfooter .pay h3 {
+                color: white;
+                margin-bottom: 30px;
+            }
+
+            footer .topfooter .pay p {
+                color: white;
+                font-weight: 100;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+
+            footer .topfooter .pay .images {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+
+                footer .topfooter .pay .images img {
+                    width: 20%;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                }
+    }
+
+    @media only screen and (min-width: 768.1px) {
+        footer .topfooter .awards h3 {
+            color: white;
+        }
+
+        footer .topfooter .awards p {
+            color: rgba(204, 204, 204, 0.8);
+            margin-top: 30px;
+            margin-bottom: 36px;
+        }
+
+        footer .topfooter .awards .image {
+            width: 60%;
+        }
+
+            footer .topfooter .awards .image img {
+                width: 100%;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+
+        footer .topfooter .col-lg-5 {
+            display: flex;
+            justify-content: center;
+        }
+
+            footer .topfooter .col-lg-5 .contact h3 {
+                color: white;
+                margin-bottom: 30px;
+            }
+
+            footer .topfooter .col-lg-5 .contact .infos .content {
+                margin-top: 15px;
+            }
+
+                footer .topfooter .col-lg-5 .contact .infos .content i {
+                    font-size: 17px;
+                    color: white;
+                }
+
+                footer .topfooter .col-lg-5 .contact .infos .content span {
+                    color: white;
+                    font-weight: 200;
+                }
+
+            footer .topfooter .col-lg-5 .contact .links {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 28px;
+                width: 70%;
+            }
+
+                footer .topfooter .col-lg-5 .contact .links i {
+                    font-size: 20px;
+                }
+
+        footer .topfooter .pay {
+            display: flex;
+            justify-content: center;
+        }
+
+            footer .topfooter .pay h3 {
+                color: white;
+                margin-bottom: 30px;
+            }
+
+            footer .topfooter .pay p {
+                color: white;
+                font-weight: 100;
+                margin-top: 10px;
+            }
+
+            footer .topfooter .pay .images {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+
+                footer .topfooter .pay .images img {
+                    width: 20%;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                }
+    }
+
+    footer .bottomfooter {
+        text-align: center;
+        padding: 25px 0px;
+        background-color: black;
+    }
+
+        footer .bottomfooter span {
+            color: rgb(184, 184, 184);
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+    /*# sourceMappingURL=tours.css.map */

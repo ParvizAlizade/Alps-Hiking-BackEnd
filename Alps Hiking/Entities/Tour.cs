@@ -1,8 +1,10 @@
-﻿namespace Alps_Hiking.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Alps_Hiking.Entities
 {
     public class Tour:BaseEntity
     {
-        public string Name { get; set; }
+        public string Name { get; set; } 
         public byte DayCount{ get; set; }
         public byte Difficulty { get; set; }
         public string Pickup { get; set; }
@@ -26,6 +28,8 @@
         public Destiantion Destination { get; set; }
         public List<Comment> Comments { get; set; }
         public int Rate { get; set; }
+
+
         public Tour()
         {
             TourImages = new();
@@ -34,6 +38,13 @@
             TourDates=new();
             Comments=new();
         }
+
+        [NotMapped]
+        public IFormFile? Image { get; set; }
+
+        [NotMapped]
+        public IFormFile FalseImage { get; set; }
+
     }
 
 }

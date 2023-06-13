@@ -1,0 +1,82 @@
+﻿@model Alps_Hiking.Entities.Order
+@inject Alps_Hiking.Services.LayoutService LayoutService
+
+@{
+    ViewData["Title"] = "Details";
+    List<Tour> tours = LayoutService.GetTours();
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+        <dt class="col-sm-2">
+          Tour
+        </dt>
+        <dd class="col-sm-10">
+           @foreach (var item in Model.OrderItems)
+            {
+                Tour tour = tours.FirstOrDefault(x => x.Id == item.TourDate.TourId);
+                <div class="image">
+                    <img style="width:350px;height:150px;object-fit:cover" src="~/assets/images/toursphotos/@tour.TourImages.FirstOrDefault(t=>t.IsMain==true)?.Path" alt="">
+                </div>
+                <br>
+            }
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalPrice)$
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.User.Fullname)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a style="color:green;" asp-action="AcceptOrdersInfo" asp-route-id="@Model.Id">Accepted</a> |
+    <a style="color:red;" asp-action="RejectsOrdersInfo" asp-route-id="@Model.Id">Rejected</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

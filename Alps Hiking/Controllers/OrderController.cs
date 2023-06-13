@@ -1,11 +1,11 @@
-﻿
-using Alps_Hiking.DAL;
+﻿using Alps_Hiking.DAL;
 using Alps_Hiking.Entities;
 using Alps_Hiking.Utilities;
 using Alps_Hiking.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.ContentModel;
 
 namespace Alps_Hiking.Controllers
 {
@@ -14,73 +14,149 @@ namespace Alps_Hiking.Controllers
         private readonly AlpsHikingDbContext _context;
         private readonly UserManager<User> _userManager;
 
-        public OrderController(AlpsHikingDbContext context,UserManager<User> userManager)
+        public OrderController(AlpsHikingDbContext context, UserManager<User> userManager)
         {
-            _context=context;
-            _userManager=userManager;
+            _context = context;
+            _userManager = userManager;
         }
         public async Task<IActionResult> Index()
         {
+            OrderVM orderVM = new OrderVM();
+            User user = null;
+            ViewBag.Slider = _context.Sliders.ToList();
 
-            User user = await _userManager.FindByNameAsync(User.Identity.Name);
-            OrderVM model = new()
+            if (User.Identity.IsAuthenticated)
             {
-                Fullname = user.Fullname,
-                Username = user.UserName,
-                Email = user.Email,
-                BasketItems = _context.BasketItems.Include(p => p.TourDate).ThenInclude(t=>t.Tour).Where(c => c.UserId == user.Id).ToList()
+                user = await _userManager.FindByNameAsync(User.Identity.Name);
 
+                if (user != null)
+                {
+                    orderVM.Email = user.Email;
+                    orderVM.Fullname = user.Fullname;
+                    orderVM.Username = user.UserName;
 
-            };
-            return View(model);
+                    List<BasketItem> basket = _context.BasketItems
+                        .Include(x => x.User)
+                        .Include(x => x.TourDate)
+                        .ThenInclude(x => x.Tour)
+                        .Where(x => x.User.Id == user.Id)
+                        .ToList();
+
+                    orderVM.BasketItems = basket;
+
+                    decimal totalPrice = 0;
+
+                    foreach (var item in basket)
+                    {
+                        totalPrice += item.Count * item.Price;
+                    }
+
+                    orderVM.TotalPrice = totalPrice;
+                }
+            }
+
+            return View(orderVM);
         }
+
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Index(OrderVM orderVM)
+        public async Task<IActionResult> Index(OrderVM model)
         {
-            User user = await _userManager.FindByNameAsync(User.Identity.Name);
-            OrderVM model = new()
+         
+            if (!User.Identity.IsAuthenticated)
             {
-                Fullname = orderVM.Fullname,
-                Username = orderVM.Username,
-                Adress=orderVM.Adress,
-                Email = orderVM.Email,
-                Number = orderVM.Number,
-                BasketItems = _context.BasketItems.Include(p => p.TourDate).Where(c => c.UserId == user.Id).ToList()
-            };
-            if (!ModelState.IsValid) return View(model);
-            if (model.BasketItems.Count == 0) return RedirectToAction("Index", "Home");
-
-
-            Order order = new Order()
-            {
-                Address = orderVM.Adress,
-                TotalPrice = 0,
-                UserId = user.Id,
-                Number = orderVM.Number,
-                Status = OrderStatus.Pending,
-            };
-
-
-            foreach (BasketItem item in model.BasketItems)
-            {
-
-                OrderItem orderItem = new OrderItem
-                {
-                    UnitPrice = (decimal)item.TourDate.Tour.DiscountPrice,
-                    TourDateId = item.TourDateId,
-                    SaleQuantity = item.Count,
-                    Order = order
-                };
-                order.TotalPrice += (decimal)item.TourDate.Tour.DiscountPrice * item.Count;
-                _context.OrderItems.Add(orderItem);
+                return RedirectToAction("Login", "Account");
             }
-            _context.BasketItems.RemoveRange(model.BasketItems);
+
+            User user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
+            {
+                return RedirectToAction("Error", "Home");
+            }
+            List<BasketItem> basket = _context.BasketItems
+               .Include(x => x.User)
+               .Include(x => x.TourDate)
+               .ThenInclude(x => x.Tour)
+               .Where(x => x.User.Id == user.Id)
+               .ToList();
+
+            var order = new Order
+            {
+                FullName = model.Fullname,
+                Email = model.Email,
+                Address = model.Adress,
+                Number = model.Number,
+                CreatedAt = DateTime.Now,
+                Status = OrderStatus.Pending,
+                UserId = user.Id,
+                TotalPrice = 0,
+                OrderItems = new List<OrderItem>()
+            };
+
+            decimal totalPrice = 0;
+
+            if (model.BasketItems != null)
+            {
+                foreach (BasketItem basketItem in basket)
+                {
+                    TourDate tourDate = await _context.TourDates
+                        .Include(x => x.Tour)
+                        .FirstOrDefaultAsync(psc => psc.Id == basketItem.TourDateId);
+
+                    if (tourDate == null)
+                    {
+                        ModelState.AddModelError("", "Choose TourDate");
+                        return View(model);
+                    }
+
+                    if (tourDate.MaxPassengerCount<basketItem.Count)
+                    {
+                        _context.BasketItems.Remove(basketItem);
+                        _context.TourDates.Remove(tourDate);
+                        _context.SaveChanges();
+                        return RedirectToAction("Index", "home");
+                    }
+
+                    if (basketItem.Count > tourDate.Tour.MaxPassengerCount)
+                    {
+                        ModelState.AddModelError("", "There aren't many places on the tour");
+                        return View(model);
+                    }
+
+                    var orderItem = new OrderItem
+                    {
+                        SaleQuantity = basketItem.Count,
+                        UnitPrice = (decimal)tourDate.Tour.DiscountPrice,
+                        TourDateId = basketItem.TourDateId,
+                        TourDate = tourDate,
+                    };
+
+                    order.OrderItems.Add(orderItem);
+
+                    decimal itemTotalPrice = orderItem.UnitPrice * orderItem.SaleQuantity;
+                    totalPrice += itemTotalPrice;
+
+                    tourDate.MaxPassengerCount = (byte)(tourDate.MaxPassengerCount - basketItem.Count);
+                    BasketItem baskets = await _context.BasketItems.FirstOrDefaultAsync(x => x.Id == basketItem.Id);
+
+                    if (baskets != null)
+                    {
+                        _context.BasketItems.Remove(baskets);
+                        await _context.SaveChangesAsync();
+                    }
+
+                }
+            }
+
+            order.TotalPrice = totalPrice;
+
             _context.Orders.Add(order);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
+
             return RedirectToAction("Index", "Home");
         }
+
     }
 }

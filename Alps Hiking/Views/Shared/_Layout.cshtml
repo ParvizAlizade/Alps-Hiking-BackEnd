@@ -109,10 +109,11 @@
                         </ul>
                     </div>
                     <div class="mobile-logo d-flex align-items-center col-md-6 d-lg-none ">
-                        <a href="./index.html"><img src="~/assets/images/slider/@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "MobileLogo")?.Value)" alt=""></a>
+                        <a asp-action="index" asp-controller="home"><img src="~/assets/images/slider/@Html.Raw(layoutservice.GetSettings().FirstOrDefault(s=>s.Key == "MobileLogo")?.Value)" alt=""></a>
                     </div>
                     <div class="basketside col-lg-1 col-md-6 d-flex justify-content-end">
-                        <i class="fa-solid basket fa-cart-shopping"></i>
+                        <a><i class="fa-solid basket me-3 fa-cart-shopping"></i></a>
+                        <a asp-action="WishList" asp-controller="Tour"><i class="fa-solid fa-heart"></i></a>
                         <div class="hamburgermenu d-lg-none">
                             <ul class="toggle">
                                 <li></li>
@@ -144,7 +145,7 @@
             </div>
 
             <div class="items">
-              @foreach (var item in baskets.BasketItem)
+              @foreach (BasketItem item in baskets.BasketItem)
                 {
                     Tour tour = tours.FirstOrDefault(x => x.Id == item.TourDate.TourId);
                     <div class="item">
@@ -152,11 +153,11 @@
                             <img src="~/assets/images/toursphotos/@tour.TourImages.FirstOrDefault(t=>t.IsMain==true)?.Path" alt="">
                         </div>
                         <div class="desc">
-                            <div class="about"><span class="count">@item.Count x</span> <h6 class="name">@tour.Name</h6></div>
-                            <br><h5>$@tour.Price</h5>
+                            <div class="about" style="width:100%"><span class="count">@item.Count x</span> <h6 class="name">@tour.Name</h6></div>
+                            <h5 class="mt-1">$@tour.DiscountPrice</h5>
                         </div>
                         <div class="trash">
-                            <i class="fa-solid fa-trash"></i>
+                            <a asp-action="RemoveBasketItem" asp-controller="Tour" asp-route-id="@item.Id"><i class="fa-solid fa-trash"></i></a>
                         </div>
                     </div>
                     <hr>
@@ -169,7 +170,7 @@
             </div>
 
             <div class="button">
-                <button class="btn ">Checkout</button>
+                <button class="btn "><a asp-controller="Order" style="color:white;text-decoration:none" asp-action="index">Checkout</a></button>
             </div>
 
             <div class="closebutton">

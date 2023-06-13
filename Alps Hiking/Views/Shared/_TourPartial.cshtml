@@ -5,7 +5,7 @@
 {
     <div class="col-lg-4 col-md-6 hedd">
         <div class="card featured-item">
-            <img style="height:30vh;object-fit:cover" class='tokenImage'
+            <img class='tokenImage'
                  src="~/assets/images/toursphotos/@item.TourImages.FirstOrDefault(ti=>ti.IsMain==true)?.Path"
                  alt="NFT" />
             <div class="title">
@@ -31,12 +31,7 @@
                         <i class="fa-solid fa-user-tie"></i>
                         <span>Min Age: @item.PassangerAge +</span>
                     </div>
-                    <div class="difficulty">
-                        <img width="19" style="color: black;"
-                             src="~/assets/images/SectionImages/single-icon-difficulty-2.png"
-                             alt="">
-                        <span>Difficulty: @item.Difficulty</span>
-                    </div>
+                  
                 </div>
                 <div class='priceinfo '>
                     <div class="discountprice">

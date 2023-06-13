@@ -183,6 +183,16 @@
                             @{
                                 double averageRating = (double)totalrating / countrating;
                             }
+
+                            @if (double.IsNaN(averageRating))
+                            {
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            }
+
                             @if (averageRating == 0)
                             {
                                 <i class="fa-regular fa-star"></i>
@@ -275,7 +285,6 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             }
-                            <span style="font-weight:600">@averageRating</span>
                             <span>(@Model.Comments.Count Reviews)</span>
                         </div>
                         <div class="detail">
@@ -422,10 +431,10 @@
                                                 <div style="display:none">
                                                     @(count++)
                                                 </div>
-                                                @if (User.Identity.Name == cmt.User.UserName)
-                                                {
                                                     <div style="display:flex;justify-content:space-between">
                                                         <h5>@cmt.User.Fullname</h5>
+                                                @if (User.Identity.Name == cmt.User.UserName)
+                                                {
                                                         <div class="d-flex justify-content-between">
                                                             <button class=" btn editbutton btn-primary me-2" data-comment-id="@cmt.Id" data-comment-text="@cmt.Text">
                                                                 Edit
@@ -438,6 +447,7 @@
                                                             </button>
                                                                </form>
                                                         </div>
+                                                }
                                                     </div>
                                                     <form class="d-none" asp-controller="Tour" asp-action="UpdateComment" asp-route-commentId="@cmt.Id" method="post">
                                                         <div class="form-group">
@@ -445,7 +455,6 @@
                                                         </div>
                                                         <button type="submit" class="mt-3 mb-3 btn btn-primary">Save</button>
                                                     </form>
-                                                }
 
 
 
@@ -566,12 +575,13 @@
                             <div class="priceside">
                                 <i class="fa-solid fa-tag fa-rotate-90"></i>
                                 <span>From</span>
-                                <span id="deletedprice"><del>$2,000</del></span>
-                                <span id="price">$1,700</span>
+                                <span id="deletedprice"><del>$@Model.Price</del></span>
+                                <span id="price">$@Model.DiscountPrice</span>
                             </div>
 
                             <div class="bookingform">
-                                <span id="title">Booking Form</span>
+                                <p class="mb-3" id="title">Booking Form</p>
+
                                <form asp-controller="tour" asp-action="details" asp-route-id="@Model.Id">
                                     <div class="day">
                                         <i class="fa-regular fa-calendar"></i>
@@ -587,8 +597,7 @@
                                     <div class="people">
                                         <i class="fa-solid fa-users"></i>
                                         <select name="count" id="">
-                                            <option selected value="">Count</option>
-                                            <option  value="1">1</option>
+                                            <option selected value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
                                             <option value="4">4</option>
@@ -606,7 +615,7 @@
                                 
 
                                 <div class="wishlist">
-                                    <i class="fa-regular fa-heart"></i>
+                                    <a asp-action="AddToWishList" asp-controller="Tour" asp-route-tourid="@Model.Id">  <i class="fa-regular fa-heart"></i></a>
                                     <p>Save To Wishlist</p>
                                 </div>
                             </div>

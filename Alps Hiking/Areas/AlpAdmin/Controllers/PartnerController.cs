@@ -4,13 +4,15 @@ using Alps_Hiking.Utilities.Extensions;
 using Alps_Hiking.Utilities.Roles;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using System.Drawing;
 
 namespace Alps_Hiking.Areas.AlpAdmin.Controllers
 {
    
         [Area("AlpAdmin")]
-        [Authorize(Roles = "Admin,Moderator")]
+        [Authorize(Roles = "Admin")]
 
         public class PartnerController : Controller
         {
@@ -23,9 +25,11 @@ namespace Alps_Hiking.Areas.AlpAdmin.Controllers
                 _env = env;
             }
 
-            public IActionResult Index()
+            public IActionResult Index(int page=1)
             {
-                IEnumerable<Partner> partners = _context.Partners.AsEnumerable();
+            ViewBag.TotalPage = Math.Ceiling((double)_context.Partners.Count() / 12);
+            ViewBag.CurrentPage = page;
+            IEnumerable<Partner> partners = _context.Partners.AsNoTracking().Skip((page - 1) * 12).Take(12).AsEnumerable();
                 return View(partners);
             }
 

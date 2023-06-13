@@ -31,7 +31,8 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-              @string.Concat(item.Text.Substring(0,40),"....")
+                    @(item.Text.Length > 40 ? string.Concat(item.Text.Substring(0, 40), ".....") : item.Text)
+
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.TimeStamp)
@@ -54,3 +55,21 @@
 }
     </tbody>
 </table>
+
+<nav class="mt-3 d-flex justify-content-center" aria-label="...">
+    <ul class="pagination">
+        <li class="page-item  @(ViewBag.CurrentPage == 1 ? "disabled" : "")">
+            <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.CurrentPage-1)" tabindex="-1">Previous</a>
+        </li>
+        @for (int i = 1; i <= ViewBag.TotalPage; i++)
+        {
+            <li class="page-item @(i==ViewBag.CurrentPage ? "active pointerNone" : "")">
+                <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+            </li>
+        }
+
+        <li class="page-item @(ViewBag.TotalPage == ViewBag.CurrentPage ? "disabled" : "")">
+            <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.CurrentPage+1)">Next</a>
+        </li>
+    </ul>
+</nav>

@@ -29,6 +29,8 @@ namespace Alps_Hiking.DAL
         public DbSet<OrderItem> OrderItems { get; set; }
 
         public DbSet<BasketItem> BasketItems { get; set; }
+        public DbSet<WishListItem> wishListItems { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{

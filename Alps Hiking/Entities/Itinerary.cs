@@ -6,5 +6,7 @@
         public string Day { get; set; }
         public int TourId { get; set; }
         public Tour Tour { get; set; }
+
+   
     }
 }

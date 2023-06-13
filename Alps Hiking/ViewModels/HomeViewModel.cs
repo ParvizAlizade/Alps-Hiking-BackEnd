@@ -9,5 +9,7 @@ namespace Alps_Hiking.ViewModels
         public List<Tour>Tours  { get; set; }
         public List<Partner>Partners { get; set; }
         public List<Comment> Comments { get; set; }
+        public List<Team> Teams { get; set; }
+
     }
 }

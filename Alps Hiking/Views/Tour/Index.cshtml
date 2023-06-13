@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="~/assets/scss/tours.css">
 }
 
-<main style="width:100%;overflow:hidden"> 
+<main style="width:100%;"> 
     <section id="slider">
         <div class="content">
             <div class="image">
@@ -24,7 +24,7 @@
     </section>
 
 
-    <section id="allsection">
+    <section id="allsection" style="width:100%;" class="d-flex flex-wrap overflow-hidden">
         <div class="col-lg-4 col-md-4">
             <div class="tour-search">
                 <div class="container">
@@ -71,10 +71,6 @@
                                 double maxDiscountedPrice = tours.Max(a => a.DiscountPrice);
                             }
                            
-
-
-
-
                             <div>
                                 <div class="price-input">
                                     <div class="field">
@@ -84,7 +80,7 @@
                                     <div class="separator">-</div>
                                     <div class="field">
                                         <p class="mt-3">Max</p>
-                                        <input type="number" placeholder="@maxDiscountedPrice" name="maxprice" class="input-max">
+                                        <input type="number" placeholder="@(maxDiscountedPrice+200)" name="maxprice" class="input-max">
                                     </div>
                                 </div>
                                 <div class="slider">
@@ -92,7 +88,7 @@
                                 </div>
                                 <div class="range-input">
                                     <input type="range"  class="range-min" min="0" max="@maxDiscountedPrice" step="50">
-                                    <input type="range" class="range-max" min="0" max="@maxDiscountedPrice" step="50">
+                                    <input type="range" class="range-max" min="0" max="@(maxDiscountedPrice+200)" step="50">
                                 </div>
                             </div>
                             
@@ -143,12 +139,14 @@
 
                             <div class="destination">
                                 <h5>Destination</h5>
-                                @foreach (Destiantion item in destiantions.GroupBy(i => i.Name).Select(g => g.First()))
-                                {
-                                    <input type="checkbox" name="destiantions" value="@item.Id" id="">
-                                    <label for="">@item.Name (@item.Tours.Count)</label>
-                                    <br>
-                                }
+                                <div class="dest" style="height:53vh;overflow-y:scroll;">
+                                    @foreach (Destiantion item in destiantions.OrderByDescending(i=>i.Tours.Count).GroupBy(i => i.Name).Select(g => g.First()))
+                                    {
+                                        <input type="checkbox" name="destiantions" value="@item.Id" id="">
+                                        <label for="">@item.Name (@item.Tours.Count)</label>
+                                        <br>
+                                    }
+                                </div>
 
                             </div>
                             
@@ -166,9 +164,8 @@
                     <div class="container">
                         <div class="row">
                             @await Html.PartialAsync("_TourPartial",Model)
-
-                            <div id="loadmore">
-                                <button style="margin-left:0px;width:35%;" class="btn text-center btn-dark mt-5" id="loadmorebutton">Load More</button>
+                            <div id="loadmore" class="d-block">
+                                <button class="btn  btn-dark mt-5" id="loadmorebutton">Load More</button>
                             </div>
                         </div>
                         <p style="opacity: 0;" id="not_found"></p>
@@ -273,6 +270,10 @@
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
     }
 
+    .dest::-webkit-scrollbar {
+        display: none;
+    }
+
 </style>
 <script>
 
@@ -320,10 +321,10 @@
 
 
     document.addEventListener("DOMContentLoaded", function (event) {
-        $(".hedd").slice(0, 12).show();
+        $(".hedd").slice(0, 24).show();
         $("#loadmorebutton").on("click", function (e) {
             e.preventDefault();
-            $(".hedd:hidden").slice(0, 6).slideDown();
+            $(".hedd:hidden").slice(0, 9).slideDown();
         });
     });
 </script>

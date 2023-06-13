@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Alps_Hiking.Entities.Slider>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagePath)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Button)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+             @(item.ImagePath.Length>30 ? string.Concat(item.ImagePath.Substring(0,30),"..."):item.ImagePath)
+
+            </td >
+                <td class="col-lg-12">
+             <img style="width:200px;height:200px;object-fit:contain;border-radius:0%" src="~/assets/images/slider/@item.ImagePath" />
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Button)
+            </td>
+            <td>
+                  <a style="padding:15px 30px;background-color:orange;border-radius:2px;color:black;font-weight:600" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                        <a style="padding:15px 30px;background-color:dodgerblue;border-radius:2px;color:black;font-weight:600" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        <a style="padding:15px 30px;background-color:red;border-radius:2px;color:black;font-weight:600" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+        </tr>
+}
+    </tbody>
+</table>

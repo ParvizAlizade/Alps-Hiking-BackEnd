@@ -1,87 +1,105 @@
 ﻿@inject Alps_Hiking.Services.LayoutService layoutservice
 @{
-    BasketVM basket = layoutservice.GetBaskets();
+    BasketVM baskets= layoutservice.GetBaskets();
     List<Tour> tours = layoutservice.GetTours();
+    List<Slider> sliders = ViewBag.Slider;
+
+}
+@section Link {
+    <link rel="stylesheet" href="~/assets/scss/contact.css">
+
 }
 @model OrderVM
 
 
-
-<form  asp-action="Index" method="post">
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="form-group">
-                <label>Full Name</label>
-                <input asp-for="Fullname" class="form-control" >
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="form-group">
-                <label>User Name</label>
-                <input asp-for="Username" class="form-control">
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <label>Address</label>
-            <input asp-for="Adress" class="form-control" >
-        </div>
-        <div class="col-lg-4">
-            <label>Number</label>
-            <input asp-for="Number" class="form-control" >
-        </div>
-        <div class="col-lg-4">
-            <label>Email</label>
-            <input asp-for="Email" class="form-control">
-        </div>
+<section id="slider">
+    <div class="mainphoto">
+        <img src="~/assets/images/slider/@sliders.Find(s=>s.Title=="Contact").ImagePath"
+             alt="">
     </div>
+</section>
 
-    <div class=" checkout-right">
-        <h4>YOUR ORDER</h4>
-        <ul>
-            @foreach (var item in basket.BasketItem)
-            {
-                Tour tour = tours.FirstOrDefault(x => x.Id == item.TourDate.TourId);
-                <li>
-                    <div class="product-image">
-                        <img src="~/assets//images/toursphotos/@tour.TourImages.First()"
-                             alt="">
+<section class="h-100" style="background-color: #efefef;margin-top:-180px;padding-top:100px">
+    <div class=" container">
+        <form  asp-action="Index" method="post">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input asp-for="Fullname" class="form-control">
                     </div>
-                    <div class="product-name">
-                        <p>@tour.Name</p>
-                    </div>
-                    <div class="product-count">@item.Count</div>
-                    <div class="product-price">
-                        <span>@tour.DiscountPrice</span>
-                    </div>
-                </li>
-            }
-
-            @foreach (var item in Model.BasketItems)
-            {
-                <input type="hidden" name="BasketItems[@Model.BasketItems.IndexOf(item)].TourDateId" value="@item.TourDateId" />
-                <input type="hidden" name="BasketItems[@Model.BasketItems.IndexOf(item)].Count" value="@item.Count" />
-            }
-
-        </ul>
-
-        <div class="checkout-footer">
-            <div class="line"></div>
-            <div class="order-details">
-                <div class="order-detail-amount">
-                    <p>Subtotal:</p>
-                    <span class="product-price">@basket.TotalPrice ₼</span>
                 </div>
-                <div class="order-detail-amount">
-                    <p>Total:</p>
-                    <span class="product-price">@basket.TotalPrice ₼</span>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <input asp-for="Username" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <label>Address</label>
+                    <input required asp-for="Adress" class="form-control">
+                </div>
+                <div class="mt-2 col-lg-4">
+                    <label>Number</label>
+                    <input required asp-for="Number" class="form-control">
+                </div>
+                <div class=" mt-2 col-lg-4">
+                    <label>Email</label>
+                    <input asp-for="Email" class="form-control">
                 </div>
             </div>
+        <div class="container h-100 py-5">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-10">
 
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+                    </div>
+
+                    @foreach (var item in baskets.BasketItem)
+                    {
+                        Tour tour = tours.FirstOrDefault(x => x.Id == item.TourDate.TourId);
+
+                        <div class="card rounded-3 mb-4">
+                            <div class="card-body p-4">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <div class="col-md-2 col-lg-2 col-xl-2">
+                                        <img src="~/assets/images/toursphotos/@tour.TourImages.FirstOrDefault(t=>t.IsMain==true)?.Path"
+                                             class="img-fluid rounded-3">
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-3">
+                                        <p class="lead fw-normal mb-2">@tour.Name</p>
+                                        <p><span class="text-muted">Price: </span>$@tour.DiscountPrice</p>
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                        <input readonly id="form1" name="quantity" min="0" value="@item.Count" type="number"
+                                               class="form-control form-control-sm" />
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-2 offset-lg-1">
+                                            <h5 class="mb-0 d-inline">$@(tour.DiscountPrice*@item.Count)</h5>
+                                    </div>
+                                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                        <a asp-action="RemoveBasketItem" asp-controller="Tour" asp-route-id="@tour.Id" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    @foreach (var item in Model.BasketItems)
+                    {
+                        <input type="hidden" name="BasketItems[@Model.BasketItems.IndexOf(item)]." value="@item.TourDateId" />
+                        <input type="hidden" name="BasketItems[@Model.BasketItems.IndexOf(item)].Count" value="@item.Count" />
+                    }
+                    <div class="card">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <button type="submit" class="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
+                            <h5 class="d-inline">TotalPrice: <span style="font-size:23px;">@baskets.TotalPrice $</span></h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-
-
+ </form>
     </div>
-    <button type="submit">place order</button>
-
-
-</form>
+</section>

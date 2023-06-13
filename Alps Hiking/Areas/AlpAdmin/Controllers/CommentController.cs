@@ -3,12 +3,13 @@ using Alps_Hiking.Entities;
 using Alps_Hiking.Utilities.Roles;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 
 namespace Alps_Hiking.Areas.AlpAdmin.Controllers
 {
     [Area("AlpAdmin")]
-    [Authorize(Roles = "Admin, Moderator")]
+    [Authorize(Roles = "Admin")]
     public class CommentController : Controller
     {
         private readonly AlpsHikingDbContext _context;
@@ -17,10 +18,14 @@ namespace Alps_Hiking.Areas.AlpAdmin.Controllers
         {
             _context = context;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page=1)
         {
+            ViewBag.TotalPage = Math.Ceiling((double)_context.Comments.Count() / 16);
+            ViewBag.CurrentPage = page;
+            ViewBag.Dresses = _context.Comments
+                                 .AsNoTracking().Skip((page - 1) * 16).Take(16).AsEnumerable();
             IEnumerable<Comment> comments = _context.Comments
-                                                        .Include(c=>c.Tour).Include(c=>c.User).AsEnumerable();
+                                                        .AsNoTracking().Skip((page - 1) * 16).Take(16).AsEnumerable();
             return View(comments);
         }
 

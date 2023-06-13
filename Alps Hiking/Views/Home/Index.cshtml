@@ -235,25 +235,25 @@
                     <div class="col-lg-3 col-md-3">
                         <div class="content">
                             <p id="hikers">2000+</p>
-                            <span>Awesome hikers</span>
+                            <span>Destinations</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <div class="content">
                             <p id="places">30+</p>
-                            <span>Stunning places</span>
+                            <span>Partners</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <div class="content">
                             <p id="miles">0+</p>
-                            <span>Miles to hike</span>
+                            <span>Team members</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <div class="content">
                             <p id="days">3500+</p>
-                            <span>Days in service</span>
+                            <span>Our Tours</span>
                         </div>
                     </div>
                 </div>
@@ -433,3 +433,46 @@
 @section Scripts {
    <script src="~/assets/js/index.js"></script>
 }
+
+<script>
+
+    let value = 0;
+    let value1 = 0;
+    let value2 = 0;
+    let value3 = 0;
+    let isScrolledToSection = false;
+    const section = document.getElementById('statistic');
+
+    window.addEventListener('scroll', function () {
+        if (!isScrolledToSection && window.innerHeight + window.pageYOffset >= section.offsetTop + section.offsetHeight - 260) {
+            isScrolledToSection = true;
+            setInterval(() => {
+                if (value3 < @(Model.Tours.Count())*60) {
+                    value3 += 4;
+                }
+                document.getElementById("days").innerHTML = value3 + '+';
+            }, 1);
+            setInterval(() => {
+                if (value2 < @Model.Partners.Count()*11) {
+                    value2 += 1;
+                }
+                document.getElementById("places").innerHTML = value2 + '+';
+            }, 37);
+
+            setInterval(() => {
+                if (value1 < @Model.Destiantion.Count()*150) {
+                    value1 += 8;
+                }
+                document.getElementById("hikers").innerHTML = value1 + '+';
+            }, .5);
+
+            setInterval(() => {
+                if (value < @Model.Teams.Count()*500) {
+                    value += 14;
+                }
+                document.getElementById("miles").innerHTML = value + '+';
+            }, 1);
+
+        }
+    });
+</script>

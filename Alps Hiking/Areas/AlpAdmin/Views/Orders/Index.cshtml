@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Order>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalPrice)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @(item.Address.Length > 17 ? string.Concat(item.Address.Substring(0, 17), "...") : item.Address)
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedAt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalPrice)
+                </td>
+                <td>
+                    <a style="padding:15px 30px;background-color:green;border-radius:2px;color:black;font-weight:600" asp-action="AcceptOrdersInfo" asp-route-id="@item.Id">Accepted</a> 
+                    <a style="padding:15px 30px;background-color:red;border-radius:2px;color:black;font-weight:600" asp-action="RejectsOrdersInfo" asp-route-id="@item.Id">Rejected</a> 
+                    <a style="padding:15px 30px;background-color:orange;border-radius:2px;color:black;font-weight:600" asp-action="Details" asp-route-id="@item.Id">Details</a> 
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<nav class="mt-3 d-flex justify-content-center" aria-label="...">
+    <ul class="pagination">
+        <li class="page-item  @(ViewBag.CurrentPage == 1 ? "disabled" : "")">
+            <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.CurrentPage-1)" tabindex="-1">Previous</a>
+        </li>
+        @for (int i = 1; i <= ViewBag.TotalPage; i++)
+        {
+            <li class="page-item @(i==ViewBag.CurrentPage ? "active pointerNone" : "")">
+                <a class="page-link" asp-action="Index" asp-route-page="@i">@i</a>
+            </li>
+        }
+
+        <li class="page-item @(ViewBag.TotalPage == ViewBag.CurrentPage ? "disabled" : "")">
+            <a class="page-link" asp-action="Index" asp-route-page="@(ViewBag.CurrentPage+1)">Next</a>
+        </li>
+    </ul>
+</nav>

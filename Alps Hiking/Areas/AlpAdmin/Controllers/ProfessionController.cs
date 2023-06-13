@@ -3,11 +3,13 @@ using Alps_Hiking.Entities;
 using Alps_Hiking.Utilities.Roles;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 
 namespace Alps_Hiking.Areas.AlpAdmin.Controllers
 {
     [Area("AlpAdmin")]
-    [Authorize(Roles = "Admin, Moderator")]
+    [Authorize(Roles = "Admin")]
     public class ProfessionController : Controller
     {
         private readonly AlpsHikingDbContext _context;
@@ -16,9 +18,13 @@ namespace Alps_Hiking.Areas.AlpAdmin.Controllers
         {
             _context = context;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page=1)
         {
-            IEnumerable<Profession> professions = _context.Profession.AsEnumerable();
+            ViewBag.TotalPage = Math.Ceiling((double)_context.Profession.Count() / 12);
+            ViewBag.CurrentPage = page;
+            ViewBag.Profession = _context.Profession
+                               .AsNoTracking().Skip((page - 1) * 12).Take(12).AsEnumerable();
+            IEnumerable<Profession> professions = _context.Profession.AsNoTracking().Skip((page - 1) * 12).Take(12).AsEnumerable();
             return View(professions);
         }
 

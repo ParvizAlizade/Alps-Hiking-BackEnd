@@ -92,6 +92,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcSXRpbmVyYXJ5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Orders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Partner/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcUGFydG5lclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -132,8 +140,96 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcUHJvZmVzc2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Setting/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2V0dGluZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Setting/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2V0dGluZ1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Setting/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2V0dGluZ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Setting/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2V0dGluZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Setting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2V0dGluZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Slider/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2xpZGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Slider/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2xpZGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Slider/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2xpZGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Slider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2xpZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Slider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcU2xpZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Team/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVGVhbVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Team/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVGVhbVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Team/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVGVhbVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Team/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVGVhbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Team/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVGVhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/TourDate/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVG91ckRhdGVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/TourDate/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVG91ckRhdGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/TourDate/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVG91ckRhdGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/TourDate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVG91ckRhdGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Tour/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVG91clxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Tour/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVG91clxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/Tour/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWxwQWRtaW5cVmlld3NcVG91clxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Areas/AlpAdmin/Views/_ViewImports.cshtml]
@@ -198,6 +294,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Views/Tour/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91clxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Views/Tour/WishList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91clxXaXNoTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/LENOVO/Desktop/Alps Hiking/Alps Hiking/Views/_ViewImports.cshtml]

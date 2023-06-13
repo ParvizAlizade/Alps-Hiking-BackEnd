@@ -23,6 +23,8 @@ namespace Alps_Hiking.Controllers
                Destiantion=_context.Destiantions.ToList(),
                Partners = _context.Partners.Take(6).ToList(),
                Comments = _context.Comments.Include(c=>c.User).Take(8).ToList(),
+               Teams = _context.Teams.ToList(),
+
                Tours = _context.Tours
                  .Include(t=>t.Category)
                     .Include(t=>t.TourDates)

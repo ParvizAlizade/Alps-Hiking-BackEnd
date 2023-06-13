@@ -40,6 +40,8 @@ namespace Alps_Hiking.Controllers
             _context = context;
             _userManager = userManager;
         }
+
+
         public IActionResult Index(int destinationId)
         {
             IQueryable<Tour> alltour = _context.Tours
@@ -114,9 +116,6 @@ namespace Alps_Hiking.Controllers
             return View(tours);
         }
 
-
-
-
         public IActionResult Details(int id)
         {
             if (id == 0) return NotFound();
@@ -137,8 +136,22 @@ namespace Alps_Hiking.Controllers
             return View(tour);
         }
 
+        public async Task<IActionResult> RemoveBasketItem(int id)
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                User user = await _userManager.FindByNameAsync(User.Identity.Name);
+                BasketItem? basketItem = _context.BasketItems.Include(t => t.TourDate).FirstOrDefault(b => b.Id == id && b.UserId == user.Id);
 
+                if (basketItem != null)
+                {
+                    _context.BasketItems.Remove(basketItem);
+                    _context.SaveChanges();
+                }
+            }
 
+            return Redirect(Request.Headers["Referer"].ToString());
+        }
 
         public async Task<IActionResult> AddComment(int id, Comment newComment)
         {
@@ -176,7 +189,6 @@ namespace Alps_Hiking.Controllers
             return RedirectToAction(nameof(Details), new { id });
         }
 
-
         [HttpPost]
         public async Task<IActionResult> DeleteComment(int commentId)
         {
@@ -192,6 +204,7 @@ namespace Alps_Hiking.Controllers
             }
             return RedirectToAction(nameof(Details), new { id = comment.TourId });
         }
+
         public IActionResult EditComment(int commentId)
         {
             Comment comment = _context.Comments.Find(commentId);
@@ -202,6 +215,7 @@ namespace Alps_Hiking.Controllers
 
             return View(comment);
         }
+
         [HttpPost]
         public async Task<IActionResult> UpdateComment(int commentId, string text)
         {
@@ -240,7 +254,6 @@ namespace Alps_Hiking.Controllers
             return relateds;
         }
 
-
         [HttpPost]
         public async Task<IActionResult> Details(int id, int count, int dateid)
         {
@@ -270,7 +283,8 @@ namespace Alps_Hiking.Controllers
                     {
                         UserId = user.Id,
                         TourDateId = dateid,
-                        Count = count
+                        Count = count,
+                        Price= (decimal)tour.DiscountPrice
                     };
                     _context.BasketItems.Add(basketItem);
                 }
@@ -288,6 +302,86 @@ namespace Alps_Hiking.Controllers
             ViewBag.Comment = _context.Comments.ToList();
             ViewBag.Relateds = RelatedTours(tours, tour, id);
             return Redirect(Request.Headers["Referer"].ToString());
+        }
+
+
+
+
+
+
+        public async Task<IActionResult> AddToWishList(int tourid)
+        {
+            Tour tour = await _context.Tours.FindAsync(tourid);
+
+            if (tour is null)
+            {
+                return NotFound();
+            }
+
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            User user = await _userManager.FindByNameAsync(User.Identity.Name);
+
+            WishListItem userWishlistItem = await _context.wishListItems
+                .FirstOrDefaultAsync(x => x.UserId == user.Id && x.TourId == tourid);
+
+            if (userWishlistItem is null)
+            {
+                userWishlistItem = new WishListItem
+                {
+                    UserId = user.Id,
+                    TourId = tourid
+                };
+                _context.wishListItems.Add(userWishlistItem);
+            }
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        public async Task<IActionResult> RemoveFromWishList(int wishListItemId)
+        {
+            User user = await _userManager.FindByNameAsync(User.Identity.Name);
+            WishListItem wishListItem = await _context.wishListItems
+                .FirstOrDefaultAsync(x => x.UserId == user.Id && x.Id == wishListItemId);
+            if (wishListItem is null)
+            {
+                return NotFound();
+            }
+            _context.wishListItems.Remove(wishListItem);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(WishList));
+        }
+
+        public async Task<IActionResult> WishList()
+        {
+
+			ViewBag.Slider = _context.Sliders.ToList();
+			if (!User.Identity.IsAuthenticated)
+            {
+                return View(new List<WishListItem>());
+            }
+
+            var userId = _userManager.GetUserId(User);
+
+            var wishListItems = _context.wishListItems
+                .Include(wli => wli.Tour)
+                .ThenInclude(p => p.TourImages)
+                .Where(wli => wli.UserId == userId)
+                .ToList();
+
+            if (wishListItems.Count == 0)
+            {
+                return View(new List<WishListItem>());
+            }
+
+            return View(wishListItems);
         }
     }
 }

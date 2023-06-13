@@ -26,7 +26,7 @@ namespace Alps_Hiking.ViewModels
         [Required]
         [StringLength(maximumLength: 150)]
         public string Number { get; set; }
-
+        public decimal TotalPrice { get; set; }
         public List<BasketItem> BasketItems { get; set; }
     }
 }

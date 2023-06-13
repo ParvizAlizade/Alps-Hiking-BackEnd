@@ -41,13 +41,14 @@ namespace Alps_Hiking.Services
                     {
                         BasketItem basket = new BasketItem()
                         {
+                            Id=item.Id,
                             TourDate = (TourDate)tour.TourDates.FirstOrDefault(),
                             Count = item.Count
                         };
                         basket.TourDate.Tour.Price = tour.Price;
 						basketData.BasketItem.Add(basket);
                         basketData.Count++;
-                        basketData.TotalPrice += item.TourDate.Tour.Price * item.Count;
+                        basketData.TotalPrice += item.TourDate.Tour.DiscountPrice * item.Count;
 					}
                 }
             }

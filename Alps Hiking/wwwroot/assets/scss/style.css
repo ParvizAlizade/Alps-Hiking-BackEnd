@@ -581,7 +581,7 @@ header .basket-menu .closebutton button {
 #PopularTours .buttonn button {
   font-size: 15px;
   font-weight: 700;
-  padding: 16px 37px 21px 37px;
+  padding:  16px 37px 21px 37px;
   text-transform: uppercase;
   border-radius: 30px;
   -moz-border-radius: 30px;
@@ -599,7 +599,7 @@ header .basket-menu .closebutton button {
 }
 @media screen and (max-width: 391px) {
   #PopularTours .col-lg-3 {
-    width: 71% !important;
+    width: 56% !important;
   }
 }
 #PopularTours .col-lg-3 .card {

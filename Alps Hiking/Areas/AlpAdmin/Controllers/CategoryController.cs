@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Alps_Hiking.Areas.AlpAdmin.Controllers
 {
     [Area("AlpAdmin")]
-    [Authorize(Roles = "Admin, Moderator")]
+    [Authorize(Roles = "Admin")]
     public class CategoryController : Controller
     {
         private readonly AlpsHikingDbContext _context;

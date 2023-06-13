@@ -4,12 +4,14 @@ using Alps_Hiking.Utilities.Extensions;
 using Alps_Hiking.Utilities.Roles;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using System.Drawing;
 
 namespace Alps_Hiking.Areas.AlpAdmin.Controllers
 {
     [Area("AlpAdmin")]
-    [Authorize(Roles = "Admin, Moderator")]
+    [Authorize(Roles = "Admin")]
     public class DestinationController : Controller
     {
         private readonly AlpsHikingDbContext _context;
@@ -21,9 +23,13 @@ namespace Alps_Hiking.Areas.AlpAdmin.Controllers
             _context = context;
             _env = env;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page=1)
         {
-            IEnumerable<Destiantion> destiantions = _context.Destiantions.AsEnumerable();
+            ViewBag.TotalPage = Math.Ceiling((double)_context.Destiantions.Count() / 8);
+            ViewBag.CurrentPage = page;
+            ViewBag.Destinations = _context.Destiantions
+                               .Include(p => p.Tours).AsNoTracking().Skip((page - 1) * 8).Take(8).AsEnumerable();
+            IEnumerable<Destiantion> destiantions = _context.Destiantions.AsNoTracking().Skip((page - 1) * 8).Take(8).AsEnumerable();
             return View(destiantions);
         }
 
